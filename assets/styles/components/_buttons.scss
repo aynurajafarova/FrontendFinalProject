@@ -1,0 +1,39 @@
+%button-style {
+  border: 1px solid $color-royal-blue;
+  border-radius: 5px;
+  font-size: $font-size - 4;
+  font-weight: $font-weight + 300;
+  text-transform: $uppercase;
+  color: $color-white;
+  transition: 0.3s ease;
+}
+
+.buttons {
+  float: right;
+  .nav-bar-btn {
+    @extend %button-style;
+    padding: 8px 30px;
+    margin-right: $mr-10;
+  }
+  .sign-in-btn {
+    color: $color-royal-blue;
+    &:hover {
+      background-color: $color-royal-blue;
+      color: $color-white;
+    }
+  }
+  .sign-up-btn {
+    background-color: $color-royal-blue;
+    color: $color-white;
+  }
+}
+
+.read-more-btn {
+  @extend %button-style;
+  width: 170px;
+  display: inline-block;
+  text-align: center;
+  padding: 15px 0;
+  border: none;
+  background-color: $color-royal-blue;
+}

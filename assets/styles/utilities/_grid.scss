@@ -1,0 +1,7 @@
+$columns: 12;
+
+@for $i from 1 through $columns {
+  .col-lg-#{$i} {
+    width: percentage($i/$columns);
+  }
+}

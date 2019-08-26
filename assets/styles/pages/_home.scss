@@ -1,0 +1,120 @@
+#welcome {
+  background-image: url("../images/header-bg.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 500px;
+  .welcome-images-group {
+  margin-top: $mt-20 + 5;
+    .first-img {
+      position: relative;
+      left: 100px;
+      float: left;
+      border-radius: 5px;
+      overflow: hidden;
+      img {
+        object-fit: cover;
+        border-radius: 5px;
+        width: 240px;
+        height: 310px;
+        transition: transform 0.3s ease;
+      }
+    }
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+    .second-img {
+      position: relative;
+      border-radius: 5px;
+      float: right;
+      left: 20px;
+      top: 0;
+      overflow: hidden;
+      img {
+        object-fit: cover;
+        height: 250px;
+        width: 240px;
+        transition: transform 0.3s ease;
+        border-radius: 5px;
+      }
+    }
+    &::after {
+      clear: both;
+    }
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+    .third-img {
+      position: relative;
+      top: 70px;
+      left: -140px;
+      border-radius: 5px;
+      float: left;
+      overflow: hidden;
+      img {
+        border-radius: 5px;
+        height: 165px;
+        width: 240px;
+      }
+      i {
+        position: absolute;
+        left: 90px;
+        top: 42px;
+        font-size: 64px;
+        color: $color-white;
+      }
+    }
+    .fourth-img {
+      position: relative;
+      top: -158px;
+      right: -21px;
+      border-radius: 5px;
+      float: right;
+      overflow: hidden;
+      img {
+        height: 222px;
+        width: 240px;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: $color-royal-blue;
+        width: 240px;
+        height: 222px;
+        opacity: 0.8;
+        border-radius: 5px;
+      }
+      .img-text {
+        position: absolute;
+        right: 5px;
+        top: 80px;
+        z-index: 3;
+        color: $color-white;
+        width: 225px;
+        strong {
+          display: inline-block;
+          font-size: $font-size - 2;
+          margin-bottom: $mb-10;
+          letter-spacing: 0.88px;
+        }
+        p {
+          font-size: $font-size + 2;
+          letter-spacing: 1.12px;
+          line-height: 28px;
+        }
+      }
+    }
+    &::after {
+      clear: both;
+    }
+  }
+}
+
+#services {
+  background-color: $color-polar;
+}

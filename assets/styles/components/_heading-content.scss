@@ -1,0 +1,19 @@
+.heading-content {
+  h1 {
+    font-size: $heading-title;
+    line-height: 40px;
+    letter-spacing: 0.9px;
+    color: $color-cloud-burst;
+    margin-bottom: $mb-20;
+    span {
+      color: $color-royal-blue;
+    }
+  }
+  p {
+    box-sizing: border-box;
+    padding: 0px 40px 35px 0px;
+    color: $color-lynch;
+    line-height: 28px;
+    letter-spacing: 1px;
+  }
+}

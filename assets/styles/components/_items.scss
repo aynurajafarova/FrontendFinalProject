@@ -1,0 +1,67 @@
+.items-list {
+  .item {
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+    background-color: $color-white;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: $mb-20;
+    margin-right: $mr-20;
+    overflow: hidden;
+    a {
+      display: inline-block;
+      position: relative;
+      transition: 0.3s ease;
+      height: 40px;
+      width: 100%;
+      top: 10px;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 150px;
+        height: 100px;
+        background: $color-polar;
+        top: -18px;
+        left: -75px;
+        transform: rotate(60deg);
+      }
+      &:hover {
+        transform: translateX(5px);
+        &::after {
+          background-color: $color-royal-blue !important;
+        }
+        i {
+          color: $color-white !important;
+        }
+      }
+      i {
+        position: absolute;
+        font-size: $font-size - 6;
+        position: absolute;
+        color: $color-fiord;
+        left: 20px;
+        z-index: 5;
+        top: 5px;
+      }
+      span {
+        color: $color-fiord;
+      }
+    }
+  }
+}
+
+.active-item {
+  &::after {
+    background-color: $color-royal-blue !important;
+  }
+  i {
+    color: $color-white !important;
+  }
+}
+
+.items-list-img {
+  margin-top: 80px;
+  img {
+    max-width: 100%;
+  }
+}

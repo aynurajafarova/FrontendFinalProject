@@ -1,0 +1,95 @@
+#header-area {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  transition: 0.5 ease;
+  .logo {
+    width: 17%;
+    float: left;
+  }
+  .header-nav-bar {
+    display: inline-block;
+    ul {
+      li {
+        padding-left: $pl-20;
+        padding-right: $pr-20;
+        a {
+          display: block;
+          height: 30px;
+          color: $color-fiord;
+          font-size: $font-size - 2;
+          font-weight: $font-weight + 200;
+          letter-spacing: 1px;
+          transition: 0.5 ease;
+        }
+      }
+    }
+    .submenu {
+      position: relative;
+      transition: 0.5s ease;
+      a {
+        i {
+          display: inline-block;
+          font-size: 8px;
+          margin-left: 5px;
+        }
+      }
+      ul {
+        position: absolute;
+        visibility: hidden;
+        width: 200px;
+        z-index: 10;
+        box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+        border-radius: 5px;
+        background-color: $color-white;
+        // transform: translate(0px, -40px);
+        li {
+          border-bottom: 1px solid #f5f5f5;
+          padding-left: 0;
+          padding-right: 0;
+          a {
+            display: block;
+            position: relative;
+            color: $color-fiord;
+            height: 35px;
+            padding-left: $pl-20;
+            line-height: 35px;
+            font-size: $font-size - 2;
+            &:hover:before {
+              content: "";
+              position: absolute;
+              width: 3px;
+              height: 35px;
+              left: 0;
+              top: 0;
+              bottom: 0;
+              background-color: $color-royal-blue;
+              transition: 0.5s ease;
+            }
+            &:hover {
+              background-color: $color-wild-sand;
+              padding-left: $pl-20 + 5;
+              transition: 0.5s ease;
+              // transform: translate(0px, 0px);
+            }
+          }
+        }
+      }
+      &:hover ul {
+        visibility: visible;
+        z-index: 10;
+      }
+    }
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.scrolled {
+  background-color: $color-white;
+  box-shadow: 0 0 7px 0px #b7b2b2;
+}

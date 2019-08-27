@@ -102,9 +102,6 @@ header,
 hgroup,
 menu,
 nav,
-section {
-  display: block;
-}
 body {
   line-height: 1;
   font-family: $base-font;
@@ -133,7 +130,8 @@ a {
 }
 
 .section {
-  padding-top: 100px;
+  display: block;
+  padding-top: 90px;
   padding-bottom: 80px;
 }
 
@@ -146,7 +144,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  // flex-wrap: no-wrap;
+  flex-wrap: no-wrap;
   // margin-right: -15px;
   // margin-left: -15px;
 }

@@ -36,4 +36,16 @@
   padding: 15px 0;
   border: none;
   background-color: $color-royal-blue;
+  &:hover {
+    background-color: $color-royal-blue-second;
+  }
+}
+
+.white-btn {
+  background-color: $color-white;
+  color: $color-royal-blue;
+  &:hover {
+    background-color: $color-white;
+    color: $color-royal-blue;
+  }
 }

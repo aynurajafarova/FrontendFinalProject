@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   height: 500px;
   .welcome-images-group {
-  margin-top: $mt-20 + 5;
+    margin-top: $mt-20 + 5;
     .first-img {
       position: relative;
       left: 100px;
@@ -115,6 +115,7 @@
   }
 }
 
-#services {
+#services,
+#pricingPlans {
   background-color: $color-polar;
 }

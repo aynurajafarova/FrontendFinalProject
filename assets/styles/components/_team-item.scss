@@ -1,0 +1,73 @@
+.team-item {
+  position: relative;
+  background-color: $color-white;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  height: 280px;
+  border-radius: $border-radius-5;
+  margin: 0 15px;
+  .team-details {
+    .team-info {
+      background-color: $color-royal-blue;
+      height: 45px;
+      padding: 20px 0px 9px;
+      transition: 0.5s ease;
+      border-radius: 5px 5px 0px 0px;
+      h3 {
+        letter-spacing: 0.69px;
+        color: $color-white;
+        margin-bottom: $mb-10 - 5;
+      }
+      span {
+        display: block;
+        font-size: $font-size - 4;
+        color: $color-link-water;
+      }
+      .social {
+        position: relative;
+        top: 45px;
+        li {
+          padding: 0 10px;
+          a {
+            color: $color-royal-blue;
+            transition: 0.5s ease;
+          }
+        }
+      }
+      p {
+        color: $color-bermuda-gray;
+        margin-top: 70px;
+        padding: 0px 30px;
+        font-size: $font-size - 2;
+        letter-spacing: 0.6px;
+        line-height: 26px;
+      }
+    }
+    .team-member-img {
+      width: 90px;
+      height: 90px;
+      border: 6px solid white;
+      border-radius: 100%;
+      overflow: hidden;
+      position: absolute;
+      left: 75px;
+      top: 225px;
+      box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+      transition: 0.3s ease;
+    }
+  }
+  &:hover {
+    .team-info {
+      height: 100px;
+      .social {
+        li {
+          a {
+            color: $color-white;
+          }
+        }
+      }
+    }
+    .team-member-img {
+      top: 238px;
+    }
+  }
+}

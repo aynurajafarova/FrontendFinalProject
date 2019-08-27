@@ -1,0 +1,87 @@
+.pricing-item {
+  background-color: $color-white;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: $pb-30 + 5;
+  margin: 0px 15px;
+  .pricing {
+    &-header {
+      border: 1px solid $color-polar;
+      height: 130px;
+      h3 {
+        text-transform: $uppercase;
+        color: $color-fiord;
+        font-weight: $font-weight + 300;
+        letter-spacing: 1px;
+        margin-top: 50px;
+      }
+    }
+    &-body {
+      .option-number {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: $color-polar;
+        border-radius: 50%;
+        margin: auto;
+        margin-top: -20px;
+        span {
+          position: absolute;
+          top: 10px;
+          left: 0;
+          right: 0;
+          color: $color-royal-blue;
+        }
+      }
+      .price-detail {
+        margin: 40px 0px 30px;
+        .currency {
+          font-weight: $font-weight + 200;
+          font-size: $font-size + 4;
+          color: $color-royal-blue;
+          position: relative;
+          top: -15px;
+        }
+        .price {
+          font-weight: $font-weight + 300;
+          font-size: ($font-size * 2) + 2;
+          color: $color-royal-blue;
+          letter-spacing: 2.12px;
+        }
+        .duration {
+          font-weight: $font-weight + 300;
+          font-size: $font-size - 2;
+          color: $color-royal-blue;
+          letter-spacing: 0.88px;
+        }
+      }
+      .services-list {
+        ul {
+          li {
+            color: $color-fiord;
+            margin-bottom: $mb-10 + 5;
+            font-size: $font-size - 2;
+            letter-spacing: 0.88px;
+          }
+        }
+      }
+    }
+    &-footer {
+      margin-top: 40px;
+    }
+  }
+}
+
+.deactive-service {
+  color: $color-botticelli !important;
+  text-decoration: line-through;
+}
+
+.active-plan {
+  background-color: $color-royal-blue;
+  h3 {
+    color: $color-white !important;
+  }
+}

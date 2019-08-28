@@ -131,7 +131,7 @@ a {
 
 .section {
   display: block;
-  padding-top: 90px;
+  padding-top: 80px;
   padding-bottom: 80px;
 }
 
@@ -151,4 +151,12 @@ a {
 
 .text-center {
   text-align: center;
+}
+
+.bg-color-white {
+  background-color: $color-white;
+}
+
+.bg-color-polar {
+  background-color: $color-polar;
 }

@@ -1,0 +1,36 @@
+#askedQuestions {
+  .heading-content {
+    h1 {
+      font-size: 30px;
+      color: $color-royal-blue;
+    }
+  }
+  .questions-list {
+    background: #ffffff;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    &-item {
+      .question {
+        border: 1px solid $color-polar;
+        padding: 20px 30px;
+        cursor: $pointer;
+      }
+      .answer {
+          display: none;
+        padding: 20px 30px 10px;
+        p {
+          font-size: $font-size - 2;
+          letter-spacing: $base-letter-spacing;
+          line-height: $base-line-height;
+          color: $color-bermuda-gray;
+          margin-bottom: $mb-10 + 5;
+        }
+      }
+    }
+  }
+}
+
+.answer.active-question {
+  display: block!important;
+}

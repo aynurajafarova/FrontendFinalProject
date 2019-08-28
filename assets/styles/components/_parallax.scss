@@ -1,6 +1,6 @@
 #parallaxCounter,
 #contactUsParallax,
-#aboutUsParallax {
+#headingParallax {
   overflow: hidden;
   position: relative;
 }
@@ -13,7 +13,7 @@
   min-height: 215px;
 }
 
-#aboutUsParallax {
+#headingParallax {
   min-height: 180px;
   .parallax-mirror {
     background-image: url("../images/home/2.jpg");

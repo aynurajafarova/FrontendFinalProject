@@ -155,7 +155,7 @@
 
 #parallaxCounter,
 #contactUsParallax,
-#aboutUsParallax {
+#headingParallax {
   overflow: hidden;
   position: relative; }
 
@@ -165,22 +165,22 @@
 #contactUsParallax {
   min-height: 215px; }
 
-#aboutUsParallax {
+#headingParallax {
   min-height: 180px; }
-  #aboutUsParallax .parallax-mirror {
+  #headingParallax .parallax-mirror {
     background-image: url("../images/home/2.jpg"); }
-    #aboutUsParallax .parallax-mirror .about-us-content {
+    #headingParallax .parallax-mirror .about-us-content {
       position: relative;
       z-index: 10;
       top: 100px; }
-      #aboutUsParallax .parallax-mirror .about-us-content h1 {
+      #headingParallax .parallax-mirror .about-us-content h1 {
         position: relative;
         font-size: 36px;
         color: #fff;
         line-height: 46px;
         letter-spacing: 1.4px;
         padding-bottom: 5px; }
-        #aboutUsParallax .parallax-mirror .about-us-content h1::after {
+        #headingParallax .parallax-mirror .about-us-content h1::after {
           content: "";
           position: absolute;
           background-color: #fff;
@@ -190,19 +190,19 @@
           right: 0;
           bottom: 0;
           margin: auto; }
-      #aboutUsParallax .parallax-mirror .about-us-content ul {
+      #headingParallax .parallax-mirror .about-us-content ul {
         margin-top: 15px; }
-        #aboutUsParallax .parallax-mirror .about-us-content ul li {
+        #headingParallax .parallax-mirror .about-us-content ul li {
           color: #e5e9f7;
           font-size: 14px;
           margin-left: 10px; }
-          #aboutUsParallax .parallax-mirror .about-us-content ul li a {
+          #headingParallax .parallax-mirror .about-us-content ul li a {
             font-size: 14px;
             color: #fff; }
-          #aboutUsParallax .parallax-mirror .about-us-content ul li i {
+          #headingParallax .parallax-mirror .about-us-content ul li i {
             font-size: 10px;
             margin-left: 8px; }
-    #aboutUsParallax .parallax-mirror::after {
+    #headingParallax .parallax-mirror::after {
       opacity: 0.5; }
 
 #parallaxCounter .parallax-mirror,
@@ -688,6 +688,31 @@
 #pricingPlans {
   background-color: #f7fafd; }
 
+#askedQuestions .heading-content h1 {
+  font-size: 30px;
+  color: #585ce9; }
+#askedQuestions .questions-list {
+  background: #ffffff;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  margin-bottom: 30px; }
+  #askedQuestions .questions-list-item .question {
+    border: 1px solid #f7fafd;
+    padding: 20px 30px;
+    cursor: pointer; }
+  #askedQuestions .questions-list-item .answer {
+    display: none;
+    padding: 20px 30px 10px; }
+    #askedQuestions .questions-list-item .answer p {
+      font-size: 14px;
+      letter-spacing: 0.88px;
+      line-height: 26px;
+      color: #6f8ba4;
+      margin-bottom: 15px; }
+
+.answer.active-question {
+  display: block !important; }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -840,6 +865,9 @@ a {
 
 .bg-color-polar {
   background-color: #f7fafd; }
+
+.d-flex {
+  display: flex; }
 
 .col-lg-1 {
   width: 8.3333333333%; }

@@ -1,0 +1,18 @@
+.pagination {
+  margin: 40px 0;
+  ul {
+    li {
+      a {
+        background-color: $color-white;
+        color: $color-royal-blue;
+        border: 1px solid $color-geyser;
+        text-align: center;
+        font-size: 14px;
+        padding: 6px 12px;
+        &:hover {
+          background-color: $color-black-squeeze;
+        }
+      }
+    }
+  }
+}

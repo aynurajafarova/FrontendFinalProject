@@ -89,7 +89,7 @@
   }
   &-content {
     box-sizing: border-box;
-    padding: 0px 34px;
+    padding: 0px 15px;
     @extend %content;
     margin-top: $mt-20;
   }
@@ -99,7 +99,7 @@
   &-post {
     border-radius: $border-radius-5;
     background-color: $color-white;
-    margin: 25px 10px;
+    margin: 25px 0;
     padding-bottom: $pb-20 + 5;
     cursor: $pointer;
     &-img {

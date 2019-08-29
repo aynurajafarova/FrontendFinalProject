@@ -5,3 +5,9 @@ $columns: 12;
     width: percentage($i/$columns);
   }
 }
+
+
+[class*="col-"] {
+  padding: 0 15px;
+  box-sizing: border-box;
+}

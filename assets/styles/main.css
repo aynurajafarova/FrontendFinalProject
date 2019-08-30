@@ -445,10 +445,10 @@
 
 .blog-post-big {
   background-color: #fff;
-  text-align: center;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08); }
   .blog-post-big-img {
     position: relative; }
     .blog-post-big-img img {
@@ -462,6 +462,29 @@
     box-sizing: border-box;
     padding: 0px 15px;
     margin-top: 20px; }
+  .blog-post-big .single-blog-post {
+    padding: 20px 25px 15px; }
+    .blog-post-big .single-blog-post-text {
+      color: #6f8ba4;
+      line-height: 28px;
+      letter-spacing: 0.88px;
+      margin-bottom: 30px; }
+    .blog-post-big .single-blog-post-images {
+      margin-bottom: 25px; }
+      .blog-post-big .single-blog-post-images a {
+        height: 185px;
+        display: block;
+        overflow: hidden;
+        position: relative;
+        border-radius: 5px; }
+        .blog-post-big .single-blog-post-images a img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 5px;
+          transition: 0.5s ease; }
+          .blog-post-big .single-blog-post-images a img:hover {
+            transform: scale(1.1); }
 
 .blog-post {
   border-radius: 5px;
@@ -479,6 +502,24 @@
     left: 35%; }
   .blog-post-content {
     margin-top: 25px; }
+
+.post-footer {
+  box-sizing: border-box;
+  padding: 15px 20px;
+  border-top: 2px solid #f7fafd; }
+  .post-footer span {
+    float: left;
+    font-size: 14px;
+    color: #6f8ba4;
+    font-weight: 300; }
+  .post-footer-nav {
+    float: right; }
+    .post-footer-nav ul li {
+      margin-left: 15px; }
+      .post-footer-nav ul li a {
+        color: #585ce9; }
+  .post-footer::after {
+    clear: both; }
 
 #ourMission .details-img, #ourVision .details-img {
   position: absolute;
@@ -529,33 +570,6 @@
 .details::after {
   clear: both; }
 
-aside .search {
-  width: 100%;
-  position: relative; }
-  aside .search input {
-    width: 100%;
-    outline: none;
-    border: 1px solid #fff;
-    box-sizing: border-box;
-    padding: 15px 0 15px 20px;
-    transition: 0.3s ease;
-    border-radius: 5px;
-    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
-    background-color: #fff;
-    font-size: 16px; }
-    aside .search input:focus {
-      border: 1px solid #585ce9;
-      padding-left: 30px; }
-  aside .search button {
-    position: absolute;
-    border: none;
-    top: 7px;
-    right: 10px;
-    height: 35px;
-    width: 35px;
-    color: #fff;
-    border-radius: 5px;
-    background-color: #585ce9; }
 aside .aside-nav-bar {
   background-color: #fff;
   margin-top: 30px;
@@ -647,6 +661,156 @@ aside .aside-contact-us {
     padding: 6px 12px; }
     .pagination ul li a:hover {
       background-color: #f4f8fb; }
+
+.quote-text .icon-quote-left-solid, .quote-text .icon-quote-right-solid {
+  position: absolute;
+  color: #e5e9f7;
+  font-size: 35px; }
+
+.quote {
+  background-color: #f4f8fb;
+  box-sizing: border-box;
+  padding: 30px 25px;
+  border-radius: 5px;
+  margin-bottom: 30px; }
+  .quote-text {
+    position: relative; }
+    .quote-text p {
+      font-size: 14px;
+      color: #6f8ba4;
+      letter-spacing: 0.88px;
+      line-height: 26px;
+      box-sizing: border-box;
+      padding: 5px 20px 20px; }
+    .quote-text .icon-quote-left-solid {
+      left: -8px; }
+    .quote-text .icon-quote-right-solid {
+      right: -10px;
+      bottom: 15px; }
+  .quote-author p {
+    color: #3b566e; }
+
+.comments-list-item-content .user-img, .comments-list-item .subcomment-content .user-img {
+  width: 70px;
+  height: 70px; }
+  .comments-list-item-content .user-img img, .comments-list-item .subcomment-content .user-img img {
+    border-radius: 5px; }
+
+.comments-list h5, .post-comment h5, .get-in-touch h5 {
+  font-size: 20px;
+  color: #6f8ba4;
+  letter-spacing: 0.88px; }
+
+.comments-list {
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08); }
+  .comments-list-item .subcomment-content {
+    margin-left: 25px;
+    margin-top: 30px; }
+  .comments-list .comment-detail {
+    width: calc(100% - 100px);
+    margin-left: 15px; }
+    .comments-list .comment-detail .comment-by {
+      position: relative; }
+      .comments-list .comment-detail .comment-by h6 {
+        color: #3b566e;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.88px;
+        line-height: 26px; }
+      .comments-list .comment-detail .comment-by span {
+        color: #6f8ba4;
+        font-size: 12px;
+        letter-spacing: 0.88px;
+        line-height: 26px; }
+      .comments-list .comment-detail .comment-by a {
+        position: absolute;
+        font-size: 14px;
+        right: 0;
+        top: 15px;
+        color: #6f8ba4;
+        padding: 5px 10px;
+        background-color: #f4f8fb;
+        border-radius: 5px;
+        letter-spacing: 0.88px;
+        transition: 0.5s ease; }
+        .comments-list .comment-detail .comment-by a i {
+          margin-right: 8px; }
+        .comments-list .comment-detail .comment-by a:hover {
+          background-color: #585ce9;
+          color: #fff; }
+    .comments-list .comment-detail p {
+      font-size: 14px;
+      color: #6f8ba4;
+      letter-spacing: 0.88px;
+      line-height: 26px; }
+
+.post-comment {
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 50px 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08); }
+  .post-comment h5 {
+    margin-left: 10px; }
+
+.comment-form input, .comment-form textarea {
+  width: 100%;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+  padding: 20px 0 20px 15px;
+  font-size: 16px;
+  background-color: #fff;
+  font-family: "Nunito Sans", sans-serif; }
+  .comment-form input:focus, .comment-form textarea:focus {
+    border: 1px solid #585ce9; }
+
+.search {
+  width: 100%;
+  position: relative; }
+  .search input {
+    width: 100%;
+    outline: none;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    padding: 15px 0 15px 20px;
+    transition: 0.3s ease;
+    border-radius: 5px;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+    font-size: 16px; }
+    .search input:focus {
+      border: 1px solid #585ce9;
+      padding-left: 30px; }
+  .search button {
+    position: absolute;
+    border: none;
+    top: 7px;
+    right: 10px;
+    height: 35px;
+    width: 35px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #585ce9;
+    outline: none;
+    cursor: pointer; }
+
+.comment-form label {
+  display: block;
+  color: #6f8ba4;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px; }
+.comment-form input {
+  height: 25px; }
+.comment-form textarea {
+  height: 150px; }
 
 #header-area {
   position: fixed;
@@ -896,6 +1060,16 @@ aside .aside-contact-us {
 .answer.active-question {
   display: block !important; }
 
+.get-in-touch-text p {
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  line-height: 26px;
+  color: #6f8ba4; }
+
+#map {
+  height: 500px;
+  width: 100%; }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -1038,7 +1212,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: no-wrap; }
+  flex-wrap: wrap; }
 
 .text-center {
   text-align: center; }
@@ -1051,6 +1225,22 @@ a {
 
 .d-flex {
   display: flex; }
+
+.zooming {
+  overflow: hidden;
+  position: relative; }
+
+.mb-10 {
+  margin-bottom: 10px; }
+
+.mb-20 {
+  margin-bottom: 20px; }
+
+.mb-30 {
+  margin-bottom: 30px; }
+
+.ml-10 {
+  margin-left: 10px; }
 
 .col-lg-1 {
   width: 8.3333333333%; }

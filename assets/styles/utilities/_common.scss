@@ -144,7 +144,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: no-wrap;
+  flex-wrap: wrap;
   // margin-right: -15px;
   // margin-left: -15px;
 }
@@ -163,4 +163,25 @@ a {
 
 .d-flex {
   display: flex;
+}
+
+.zooming {
+  overflow: hidden;
+  position: relative;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.ml-10{
+  margin-left: 10px;
 }

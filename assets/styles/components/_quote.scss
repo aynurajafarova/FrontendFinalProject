@@ -1,0 +1,40 @@
+%icon-quote {
+  position: absolute;
+  color: $color-link-water;
+  font-size: 35px;
+}
+
+.quote {
+  background-color: $color-black-squeeze;
+  box-sizing: border-box;
+  padding: 30px 25px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  &-text {
+    position: relative;
+    p {
+      font-size: 14px;
+      color: $color-bermuda-gray;
+      letter-spacing: $base-letter-spacing;
+      line-height: $base-line-height;
+      box-sizing: border-box;
+      padding: 5px 20px 20px;
+    }
+    .icon-quote {
+      &-left-solid {
+        @extend %icon-quote;
+        left: -8px;
+      }
+      &-right-solid {
+        @extend %icon-quote;
+        right: -10px;
+        bottom: 15px;
+      }
+    }
+  }
+  &-author {
+    p {
+      color: $color-fiord;
+    }
+  }
+}

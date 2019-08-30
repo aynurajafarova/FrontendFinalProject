@@ -1,0 +1,94 @@
+%user-avatar {
+  .user-img {
+    width: 70px;
+    height: 70px;
+    img {
+      border-radius: $border-radius-5;
+    }
+  }
+}
+
+%comment-title {
+  font-size: 20px;
+  color: $color-bermuda-gray;
+  letter-spacing: $base-letter-spacing;
+}
+
+.comments-list {
+  background-color: $color-white;
+  box-sizing: border-box;
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  h5 {
+    @extend %comment-title;
+  }
+  &-item {
+    &-content {
+      @extend %user-avatar;
+    }
+    .subcomment-content {
+      margin-left: 25px;
+      margin-top: 30px;
+      @extend %user-avatar;
+    }
+  }
+
+  .comment-detail {
+    width: calc(100% - 100px);
+    margin-left: 15px;
+    .comment-by {
+      position: relative;
+      h6 {
+        color: $color-fiord;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: $base-letter-spacing;
+        line-height: $base-line-height;
+      }
+      span {
+        color: $color-bermuda-gray;
+        font-size: 12px;
+        letter-spacing: $base-letter-spacing;
+        line-height: $base-line-height;
+      }
+      a {
+        position: absolute;
+        font-size: 14px;
+        right: 0;
+        top: 15px;
+        color: $color-bermuda-gray;
+        padding: 5px 10px;
+        background-color: $color-black-squeeze;
+        border-radius: $border-radius-5;
+        letter-spacing: $base-letter-spacing;
+        transition: 0.5s ease;
+        i {
+          margin-right: 8px;
+        }
+        &:hover {
+          background-color: $color-royal-blue;
+          color: $color-white;
+        }
+      }
+    }
+    p {
+      font-size: 14px;
+      color: $color-bermuda-gray;
+      letter-spacing: $base-letter-spacing;
+      line-height: $base-line-height;
+    }
+  }
+}
+
+.post-comment{
+  background-color: $color-white;
+  box-sizing: border-box;
+  padding:50px 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  h5{
+    margin-left: 10px;
+    @extend %comment-title;
+  }
+}

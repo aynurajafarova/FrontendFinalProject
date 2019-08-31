@@ -7,57 +7,37 @@
     margin-top: $mt-20 + 5;
     .first-img {
       position: relative;
-      left: 100px;
+      height: 350px;
       float: left;
       border-radius: 5px;
       overflow: hidden;
       img {
         object-fit: cover;
         border-radius: 5px;
-        width: 240px;
-        height: 310px;
+        width: 100%;
+        height: 350px;
         transition: transform 0.3s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
-    &:hover {
-      img {
-        transform: scale(1.1);
-      }
-    }
+
     .second-img {
       position: relative;
       border-radius: 5px;
-      float: right;
-      left: 20px;
-      top: 0;
+      float: left;
+      height: 180px;
+      top: 15px;
       overflow: hidden;
       img {
         object-fit: cover;
-        height: 250px;
-        width: 240px;
+        width: 100%;
         transition: transform 0.3s ease;
-        border-radius: 5px;
-      }
-    }
-    &::after {
-      clear: both;
-    }
-    &:hover {
-      img {
-        transform: scale(1.1);
-      }
-    }
-    .third-img {
-      position: relative;
-      top: 70px;
-      left: -140px;
-      border-radius: 5px;
-      float: left;
-      overflow: hidden;
-      img {
-        border-radius: 5px;
-        height: 165px;
-        width: 240px;
+        height: 180px;
+        &:hover {
+          transform: scale(1.1);
+        }
       }
       i {
         position: absolute;
@@ -67,16 +47,41 @@
         color: $color-white;
       }
     }
+    &::after {
+      clear: both;
+    }
+
+    .third-img {
+      position: relative;
+      border-radius: 5px;
+      float: left;
+      overflow: hidden;
+      height: 250px;
+      img {
+        border-radius: 5px;
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
     .fourth-img {
       position: relative;
-      top: -158px;
-      right: -21px;
       border-radius: 5px;
       float: right;
       overflow: hidden;
+      height: 265px;
+      top: 15px;
       img {
-        height: 222px;
-        width: 240px;
+        height: 265px;
+        width: 100%;
+        transition: transform 0.3s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
       }
       &:after {
         content: "";
@@ -84,15 +89,16 @@
         right: 0;
         top: 0;
         background-color: $color-royal-blue;
-        width: 240px;
-        height: 222px;
+        width: 100%;
+        height: 100%;
         opacity: 0.8;
         border-radius: 5px;
       }
+
       .img-text {
         position: absolute;
-        right: 5px;
-        top: 80px;
+        right: 30px;
+        top: 90px;
         z-index: 3;
         color: $color-white;
         width: 225px;
@@ -120,3 +126,17 @@
   background-color: $color-polar;
 }
 
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) and (max-width: 991.98px) {
+//   $columns: 12;
+//   @for $i from 1 through $columns {
+//     .col-md-#{$i} {
+//       width: percentage($i/$columns);
+//     }
+//   }
+
+//   .container {
+//     width: 980px;
+//     margin: auto;
+//   }
+// }

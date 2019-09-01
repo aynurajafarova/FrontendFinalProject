@@ -7,8 +7,8 @@
     }
   }
 
-  #header-area{
-      display: none;
+  #header-area {
+    display: none;
   }
   #features {
     .heading-content {
@@ -189,13 +189,30 @@
   }
 }
 
-// Large devices (desktops, 992px and up)
-// @media (min-width: 992px) and (max-width: 1199.98px) {
-//     $columns: 12;
-//     @for $i from 1 through $columns {
-//       .col-lg-#{$i} {
-//         width: percentage($i/$columns);
-//       }
-//     }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  $columns: 12;
+  @for $i from 1 through $columns {
+    .col-lg-#{$i} {
+      width: percentage($i/$columns);
+    }
+  }
 
-//  }
+  // .container {
+  //   width: 980px;
+  //   margin: auto;
+  // }
+  .section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  #ourMission {
+    .details-content {
+      top: 95px;
+    }
+  }
+  #ourVision {
+    .details-content {
+      top: 86px;
+    }
+  }
+}

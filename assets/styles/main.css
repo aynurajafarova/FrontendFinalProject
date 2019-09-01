@@ -1309,9 +1309,6 @@ aside .aside-contact-us {
   .welcome-content {
     text-align: center; }
 
-  #features {
-    margin-top: 35%; }
-
   #services .heading-content {
     margin-top: 10%; }
 
@@ -1648,6 +1645,52 @@ aside .aside-contact-us {
       position: relative;
       top: 64%;
       left: 6%; } }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .col-lg-1 {
+    width: 8.3333333333%; }
+
+  .col-lg-2 {
+    width: 16.6666666667%; }
+
+  .col-lg-3 {
+    width: 25%; }
+
+  .col-lg-4 {
+    width: 33.3333333333%; }
+
+  .col-lg-5 {
+    width: 41.6666666667%; }
+
+  .col-lg-6 {
+    width: 50%; }
+
+  .col-lg-7 {
+    width: 58.3333333333%; }
+
+  .col-lg-8 {
+    width: 66.6666666667%; }
+
+  .col-lg-9 {
+    width: 75%; }
+
+  .col-lg-10 {
+    width: 83.3333333333%; }
+
+  .col-lg-11 {
+    width: 91.6666666667%; }
+
+  .col-lg-12 {
+    width: 100%; }
+
+  .section {
+    padding-top: 80px;
+    padding-bottom: 80px; }
+
+  #ourMission .details-content {
+    top: 95px; }
+
+  #ourVision .details-content {
+    top: 86px; } }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)

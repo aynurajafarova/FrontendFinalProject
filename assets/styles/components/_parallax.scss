@@ -104,12 +104,14 @@
       position: relative;
       margin-bottom: $mb-10 + 5;
       margin-top: $mt-10 * 7;
-      &::after {
+      &::before {
         content: "";
         position: absolute;
-        left: 75px;
+        left: 0;
+        right: 0;
+        margin: auto;
         top: 55px;
-        width: 130px;
+        width: 115px;
         border-bottom: 1px dashed $color-white;
       }
     }

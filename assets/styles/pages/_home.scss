@@ -2,7 +2,7 @@
   background-image: url("../images/header-bg.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  height: 500px;
+  // height: 500px;
   .welcome-images-group {
     margin-top: $mt-20 + 5;
     .first-img {
@@ -97,7 +97,9 @@
 
       .img-text {
         position: absolute;
-        right: 30px;
+        right: 0;
+        left: 0;
+        margin: auto;
         top: 90px;
         z-index: 3;
         color: $color-white;
@@ -126,17 +128,274 @@
   background-color: $color-polar;
 }
 
-// // Medium devices (tablets, 768px and up)
-// @media (min-width: 768px) and (max-width: 991.98px) {
-//   $columns: 12;
-//   @for $i from 1 through $columns {
-//     .col-md-#{$i} {
-//       width: percentage($i/$columns);
-//     }
-//   }
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  $columns: 12;
+  @for $i from 1 through $columns {
+    .col-xs-#{$i} {
+      width: percentage($i/$columns);
+    }
+  }
+  .section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
-//   .container {
-//     width: 980px;
-//     margin: auto;
-//   }
-// }
+  .heading-content {
+    p {
+      padding: 0px 0px 40px 0px;
+    }
+  }
+
+  #welcome {
+    .welcome-content {
+      .heading-content {
+        text-align: center;
+      }
+    }
+    .welcome-images-group {
+      .first-img {
+        height: 290px;
+        img {
+          height: 290px;
+        }
+      }
+      .second-img {
+        i {
+          left: 60px;
+          top: 60px;
+          font-size: 50px;
+        }
+      }
+      .third-img {
+        height: 200px;
+      }
+      .fourth-img {
+        .img-text {
+          right: 0;
+          top: 65px;
+          width: 160px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  #features {
+    // margin-top: 60%;
+    // margin-top: 90%;
+    .features-small-item {
+      .small-item-desc {
+        padding: 20px 0px;
+      }
+    }
+  }
+
+  #services,
+  #designDevelopment {
+    .items-list {
+      display: block;
+    }
+  }
+
+  #parallaxCounter {
+    min-height: 654px;
+    .parallax-mirror {
+      min-height: 100%;
+    }
+  }
+
+  #ourTeam {
+    .team-item {
+      margin-bottom: 25%;
+      // .team-details{
+      //   .team-member-img{
+      //     left: 150px;
+      //   }
+      // }
+    }
+  }
+
+  #pricingPlans {
+    .pricing-item {
+      margin-bottom: 10%;
+    }
+  }
+
+  #contactUsParallax {
+    background-color: $color-polar;
+    .contact-us-info {
+      top: 60px;
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  $columns: 12;
+  @for $i from 1 through $columns {
+    .col-sm-#{$i} {
+      width: percentage($i/$columns);
+    }
+  }
+  .section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .welcome-content {
+    text-align: center;
+  }
+
+  #services,
+  #designDevelopment {
+    .items-list {
+      display: block;
+    }
+  }
+
+  #parallaxCounter {
+    min-height: 850px;
+    .parallax-mirror {
+      min-height: 100%;
+    }
+  }
+
+  .team-item {
+    margin-bottom: 25%;
+    .team-details {
+      .team-info {
+        p {
+          padding: 0px 0px;
+        }
+      }
+    }
+  }
+
+  .pricing-item {
+    margin-bottom: 5%;
+  }
+
+  #contactUsParallax {
+    background-color: $color-polar;
+    .parallax-mirror {
+      .contact-us-info {
+        top: 70px;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  $columns: 12;
+  @for $i from 1 through $columns {
+    .col-md-#{$i} {
+      width: percentage($i/$columns);
+    }
+  }
+
+  // .container {
+  //   width: 980px;
+  //   margin: auto;
+  // }
+  .section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .welcome-content {
+    text-align: center;
+  }
+
+  #features {
+    margin-top: 35%;
+  }
+
+  #services {
+    .heading-content {
+      margin-top: 10%;
+    }
+  }
+
+  .items-list-img {
+    margin-bottom: 10%;
+    img {
+      margin-left: 15%;
+    }
+  }
+  #parallaxCounter {
+    min-height: 440px;
+    .parallax-mirror {
+      height: 100%;
+      .count-item {
+        strong {
+          &::after {
+            left: 90px;
+          }
+        }
+      }
+    }
+  }
+
+  .team-item {
+    margin-bottom: 25%;
+    .team-details {
+      .team-info {
+        p {
+          padding: 0px 0px;
+        }
+      }
+    }
+  }
+  .pricing-item {
+    margin-bottom: 10%;
+  }
+  #contactUsParallax {
+    background-color: $color-polar;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  $columns: 12;
+  @for $i from 1 through $columns {
+    .col-lg-#{$i} {
+      width: percentage($i/$columns);
+    }
+  }
+
+  // .container {
+  //   width: 980px;
+  //   margin: auto;
+  // }
+  .section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  #welcome {
+    .welcome-images-group {
+      .fourth-img {
+        .img-text {
+          top: 65px;
+          width: 165px;
+        }
+      }
+    }
+  }
+
+  .team-item {
+    margin-bottom: 25%;
+    .team-details {
+      .team-info {
+        p {
+          padding: 0px 10px;
+        }
+      }
+      .team-member-img {
+        top: 250px;
+      }
+    }
+  }
+}

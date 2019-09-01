@@ -4,7 +4,7 @@
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
   height: 280px;
   border-radius: $border-radius-5;
-  margin: 0 15px;
+  // margin: 0 15px;
   cursor: $pointer;
   .team-details {
     .team-info {
@@ -50,8 +50,10 @@
       border-radius: 100%;
       overflow: hidden;
       position: absolute;
-      left: 75px;
       top: 225px;
+      left: 0;
+      right: 0;
+      margin: auto;
       box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
       transition: 0.3s ease;
     }

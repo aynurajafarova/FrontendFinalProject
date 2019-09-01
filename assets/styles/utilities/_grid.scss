@@ -6,10 +6,13 @@
       width: percentage($i/$columns);
     }
   }
+
+  .section {
+    display: block;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
-
-
-
 
 [class*="col-"] {
   padding: 0 15px;

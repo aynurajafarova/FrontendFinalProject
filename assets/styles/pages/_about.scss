@@ -36,10 +36,13 @@
       position: relative;
       top: 52%;
       left: 5%;
+      p{
+        padding: 20px 10px 5px;
+      }
     }
   }
   #ourVision {
-    height: 720px;
+    height: 825px;
     .details-img {
       width: 90%;
       left: 30px;
@@ -51,7 +54,7 @@
     .details-content {
       width: 90%;
       position: relative;
-      top: 55%;
+      top: 48%;
       left: 5%;
     }
   }

@@ -26,14 +26,6 @@
       width: percentage($i/$columns);
     }
   }
-  aside {
-    .aside-contact-us {
-      &-text {
-        top: 15%;
-        left: 3%;
-      }
-    }
-  }
 }
 
 // Large devices (desktops, 992px and up)

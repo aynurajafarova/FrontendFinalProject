@@ -66,9 +66,10 @@ aside {
   .aside-contact-us {
     margin-top: 30px;
     position: relative;
-    height: 228px;
+    height: 244px;
     img {
       width: 100%;
+      height: 100%;
       border-radius: $border-radius-5;
     }
     &:after {

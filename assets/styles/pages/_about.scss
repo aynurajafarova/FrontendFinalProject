@@ -192,6 +192,7 @@
   }
 }
 
+// Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) {
   $columns: 12;
   @for $i from 1 through $columns {

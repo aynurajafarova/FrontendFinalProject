@@ -1411,18 +1411,26 @@ aside .aside-contact-us {
     border: 1px solid #f7fafd;
     padding: 20px 30px;
     cursor: pointer; }
+    #askedQuestions .questions-list-item .question:hover {
+      background-color: #f7fafd;
+      -webkit-transition: 0.5s ease;
+      transition: 0.5s ease; }
+      #askedQuestions .questions-list-item .question:hover h5 {
+        padding-left: 15px;
+        -webkit-transition: 0.5s ease;
+        transition: 0.5s ease; }
   #askedQuestions .questions-list-item .answer {
-    display: none;
-    padding: 20px 30px 10px; }
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.5s ease;
+    transition: max-height 0.5s ease; }
     #askedQuestions .questions-list-item .answer p {
+      padding: 20px 30px 10px;
       font-size: 14px;
       letter-spacing: 0.88px;
       line-height: 26px;
       color: #6f8ba4;
       margin-bottom: 15px; }
-
-.answer.active-question {
-  display: block !important; }
 
 @media (max-width: 575.98px) {
   .col-xs-1 {

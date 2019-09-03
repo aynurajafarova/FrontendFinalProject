@@ -15,11 +15,22 @@
         border: 1px solid $color-polar;
         padding: 20px 30px;
         cursor: $pointer;
+        &:hover {
+          background-color: $color-polar;
+          transition: 0.5s ease;
+          h5 {
+            padding-left: 15px;
+            transition: 0.5s ease;
+          }
+        }
       }
       .answer {
-        display: none;
-        padding: 20px 30px 10px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+
         p {
+          padding: 20px 30px 10px;
           font-size: $font-size - 2;
           letter-spacing: $base-letter-spacing;
           line-height: $base-line-height;
@@ -31,10 +42,6 @@
   }
 }
 
-.answer.active-question {
-  display: block !important;
-}
-
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
   $columns: 12;
@@ -43,11 +50,11 @@
       width: percentage($i/$columns);
     }
   }
- #askedQuestions{
-   .questions-list{
-     margin-top: 10%;
-   }
- }
+  #askedQuestions {
+    .questions-list {
+      margin-top: 10%;
+    }
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -58,14 +65,14 @@
       width: percentage($i/$columns);
     }
   }
-  #askedQuestions{
-    .questions-list{
+  #askedQuestions {
+    .questions-list {
       margin-top: 10%;
     }
   }
-  #services{
-    .items-list-img{
-      img{
+  #services {
+    .items-list-img {
+      img {
         margin-left: 15%;
       }
     }
@@ -80,14 +87,14 @@
       width: percentage($i/$columns);
     }
   }
-  #askedQuestions{
-    .questions-list{
+  #askedQuestions {
+    .questions-list {
       margin-top: 10%;
     }
   }
-  #services{
-    .items-list-img{
-      img{
+  #services {
+    .items-list-img {
+      img {
         margin-left: 17%;
       }
     }

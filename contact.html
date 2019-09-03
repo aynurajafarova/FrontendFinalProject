@@ -19,7 +19,7 @@
     <header id='header-area' class="bg-color-white">
         <div class="container">
             <div class="row">
-                <div class="col-xl-12">
+                <div class="col-lg-12 col-xl-12">
                     <div class="logo">
                         <a href="index.html">
                             <img src="./assets/images/jirono_logo.png" alt="jirono_logo">
@@ -83,55 +83,129 @@
                 </div>
             </div>
         </section>
-        <section id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24313.215380891517!2d49.86191205!3d40.3833254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1saz!2s!4v1567268136719!5m2!1saz!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <section id="map" class="section">
+            <div class="container">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24313.215380891517!2d49.86191205!3d40.3833254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1saz!2s!4v1567268136719!5m2!1saz!2s"
+                        width="100%" height="520" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <div class="map-content">
+                        <div class="row">
+                            <div class="location d-flex col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                <i class="icon-location-arrow-solid"></i>
+                                <div class="location-text">
+                                    <span>
+                                        455 West Orchard Street
+                                        <br>
+                                        Kings Mountain, NC 28086
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="phone-number d-flex col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                <i class="icon-phone-alt-solid"></i>
+                                <div class="phone-number-text">
+                                    <span>
+                                        (272) 211-7370
+                                        <br>
+                                        (524) 386-5730
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="email-addresses col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                <div class="email-address">
+                                    <i class="icon-envelope-solid"></i>
+                                    <span>
+                                        <a href="#">info@yourbrand.com</a>
+                                    </span>
+                                </div>
+                                <div class="email-address">
+                                    <i class="icon-envelope-solid"></i>
+                                    <span>
+                                        <a href="#">support@yourbrand.com</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map-social-networks">
+                            <ul>
+                                <div class="row">
+                                    <li>
+                                        <a href="https://www.facebook.com/">
+                                            <i class="icon-facebook-square-brands"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/">
+                                            <i class="icon-twitter-square-brands"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/">
+                                            <i class="icon-linkedin-brands"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/">
+                                            <i class="icon-google-plus-square-brands"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/">
+                                            <i class="icon-github-square-brands"></i>
+                                        </a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="section bg-color-polar">
             <div class="container">
-                <div class="col-xl-12 d-flex">
-                    <div class="col-xl-4">
-                        <div class="get-in-touch">
-                            <h5 class="mb-30">Get in touch</h5>
-                            <div class="get-in-touch-text">
-                                <p class="mb-30">Orci varius natoque penatibus et magnis dis parturient montes, nascetur
-                                    ridiculus
-                                    mus. Etiam tempus magna vel turpis pharetra dictum.</p>
-                                <p class="mb-30">Sed blandit tempus purus, sed sodales leo rutrum vel. Nam vulputate
-                                    ipsum ac est congue, eget commodo magna lobortis.</p>
+                <div class="col-xs-12 col-xl-12">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <div class="get-in-touch">
+                                <h5 class="mb-30">Get in touch</h5>
+                                <div class="get-in-touch-text">
+                                    <p class="mb-30">Orci varius natoque penatibus et magnis dis parturient montes,
+                                        nascetur
+                                        ridiculus
+                                        mus. Etiam tempus magna vel turpis pharetra dictum.</p>
+                                    <p class="mb-30">Sed blandit tempus purus, sed sodales leo rutrum vel. Nam vulputate
+                                        ipsum ac est congue, eget commodo magna lobortis.</p>
+                                </div>
                             </div>
                         </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8 col-xl-8">
+                            <form class="comment-form" method="POST">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-20">
+                                        <input type="text" id="name" placeholder="Name, surname">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-20">
+                                        <input type="text" id="email" placeholder="Email">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-30">
+                                        <textarea id="comment" placeholder="Your message"></textarea>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                        <a href="#" class="primary-btn">send</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <div class="col-xl-8">
-
-
-                        <form class="comment-form" method="POST">
-                            <div class="row">
-                                <div class="col-xl-6 mb-20">
-                                    <input type="text" id="name" placeholder="Name, surname">
-                                </div>
-                                <div class="col-xl-6 mb-20">
-                                    <input type="text" id="email" placeholder="Email">
-                                </div>
-                                <div class="col-xl-12 mb-30">
-                                    <textarea id="comment" placeholder="Your message"></textarea>
-                                </div>
-                                <div class="col-xl-12">
-                                    <a href="#" class="primary-btn">send</a>
-                                </div>
-                            </div>
-                        </form>
-
-                    </div>
-
                 </div>
             </div>
         </section>
     </main>
     <footer id="footer-side">
         <div class="container">
-            <div class="col-xl-12">
+            <div class="col-lg-12 col-xl-12">
                 <div class="row">
-                    <div class="col-xl-5">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
                         <div class="logo">
                             <img src="./assets/images/logo-white.png" alt="">
                         </div>
@@ -140,25 +214,27 @@
                                 Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.</p>
                         </div>
                     </div>
-                    <div class="footer-nav-bar col-xl-2">
+                    <div class="footer-nav-bar col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2">
                         <h5>Helpful Links</h5>
                         <ul>
-                            <li><a href="about.html"><i class="icon-chevron-right-solid"></i><span>About us</span></a></li>
+                            <li><a href="about.html"><i class="icon-chevron-right-solid"></i><span>About us</span></a>
+                            </li>
                             <li><a href="#"><i class="icon-chevron-right-solid"></i><span>Features</span></a></li>
                             <li><a href="faq.html"><i class="icon-chevron-right-solid"></i><span>FAQ’s</span></a></li>
                             <li><a href="blog.html"><i class="icon-chevron-right-solid"></i><span>Blog</span></a></li>
                         </ul>
                     </div>
-                    <div class="footer-nav-bar col-xl-2">
+                    <div class="footer-nav-bar col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2">
                         <h5>Support</h5>
                         <ul>
                             <li><a href="#"><i class="icon-chevron-right-solid"></i><span>Privacy Policy</span></a></li>
                             <li><a href="#"><i class="icon-chevron-right-solid"></i><span>Terms of Use</span></a></li>
                             <li><a href="#"><i class="icon-chevron-right-solid"></i><span>Support Center</span></a></li>
-                            <li><a href="contact.html"><i class="icon-chevron-right-solid"></i><span>Contact</span></a></li>
+                            <li><a href="contact.html"><i class="icon-chevron-right-solid"></i><span>Contact</span></a>
+                            </li>
                         </ul>
                     </div>
-                    <dic class="footer-contact-us col-xl-3">
+                    <dic class="footer-contact-us col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-3">
                         <h5>Contact Us</h5>
                         <div class="footer-address">
                             <p>455 West Orchard Street

@@ -156,10 +156,20 @@
 .active-item i {
   color: #fff !important; }
 
-.items-list-img {
+.items-list-img-right {
   margin-top: 80px; }
-  .items-list-img img {
+  .items-list-img-right img {
+    -webkit-transform: translateX(120px);
+            transform: translateX(120px);
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    opacity: 0;
     max-width: 100%; }
+
+.active-img {
+  opacity: 1 !important;
+  -webkit-transform: translateX(55px) !important;
+          transform: translateX(55px) !important; }
 
 #parallaxCounter,
 #contactUsParallax,
@@ -222,7 +232,6 @@
 
 .parallax-mirror {
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
   position: absolute;
   width: 100%;

@@ -1,9 +1,12 @@
 $(document).ready(function () {
 
-    let countArray = [96, 190, 12, 46];
-    // $(window).scroll(function () {
-    //     let scrollTop = $(this).scrollTop();
-    //     $('.parallax-mirror').css('top', -(scrollTop) + 'px');
-    // });
+    $(window).scroll(function () {
+        parallax();
+    });
 
+    function parallax() {
+        let scrollTop = $(window).scrollTop();
+        $('.parallax-mirror').css('background-position', 'center ' + (scrollTop * 0.75) + 'px');
+        // $('.parallax-mirror').css({'top': scrollTop * 0.9});
+    };
 });

@@ -5,9 +5,11 @@ questions.forEach(question => {     //I want to loop through them all and set a 
         let answer = question.nextElementSibling;     //get the next item after the question which whould be the answer
 
         if (answer.style.maxHeight) {    //I want to check the current value of the max-height because max-height indicates whether it is open or closed
-            //if max-height is set to zero it means it's closed otherwise it's open
-            answer.style.maxHeight = 0;
+            answer.style.maxHeight = null;      //if max-height is zero/null it means it's closed otherwise it's open
         } else {
+            document.querySelectorAll('.answer').forEach(answer => {
+                answer.style.maxHeight = null;
+            });     //I want to close the other answers when I click on one of the questions
             answer.style.maxHeight = answer.scrollHeight + 'px';    //I want to get the entire height of the answer and assign it to the maxHeight
         }
     });

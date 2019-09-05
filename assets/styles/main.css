@@ -200,7 +200,7 @@
   min-height: 215px; }
 
 #headingParallax {
-  min-height: 180px; }
+  min-height: 350px; }
   #headingParallax .parallax-mirror {
     background-image: url("../images/home/2.jpg"); }
     #headingParallax .parallax-mirror .about-us-content {
@@ -893,11 +893,14 @@ aside .aside-contact-us {
   right: 0;
   bottom: 0;
   z-index: 1111;
-  background-image: linear-gradient(135deg, #585ce9 0%, #5c83e3 100%); }
+  background-image: linear-gradient(135deg, #585ce9 0%, #5c83e3 100%);
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
   #preloader #loader {
-    position: absolute;
-    top: calc(50% - 20px);
-    left: calc(50% - 20px); }
+    left: 50%;
+    top: 50%;
+    position: absolute; }
     #preloader #loader #shadow {
       width: 50px;
       height: 5px;

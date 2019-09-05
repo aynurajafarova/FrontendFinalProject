@@ -39,21 +39,23 @@
     background-color: #fff;
     color: #585ce9; }
 
-.heading-content h1 {
-  font-size: 28px;
-  line-height: 40px;
-  letter-spacing: 0.9px;
-  color: #1e3056;
-  margin-bottom: 20px; }
-  .heading-content h1 span {
-    color: #585ce9; }
-.heading-content p {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0px 40px 40px 0px;
-  color: #697ba2;
-  line-height: 28px;
-  letter-spacing: 1px; }
+.heading-content {
+  padding-top: 20px; }
+  .heading-content h1 {
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0.9px;
+    color: #1e3056;
+    margin-bottom: 20px; }
+    .heading-content h1 span {
+      color: #585ce9; }
+  .heading-content p {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0px 40px 40px 0px;
+    color: #697ba2;
+    line-height: 28px;
+    letter-spacing: 1px; }
 
 .features-small-item {
   -webkit-transform: translateY(30px);
@@ -157,7 +159,7 @@
   color: #fff !important; }
 
 .items-list-img-right {
-  margin-top: 80px; }
+  margin-top: 65px; }
   .items-list-img-right img {
     -webkit-transform: translateX(120px);
             transform: translateX(120px);
@@ -165,11 +167,25 @@
     transition: 0.5s ease;
     opacity: 0;
     max-width: 100%; }
+.items-list-img-left {
+  margin-top: 80px; }
+  .items-list-img-left img {
+    max-width: 100%;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    opacity: 0; }
 
-.active-img {
+.reveal-left {
   opacity: 1 !important;
   -webkit-transform: translateX(55px) !important;
           transform: translateX(55px) !important; }
+
+.reveal-right {
+  opacity: 1 !important;
+  -webkit-transform: translateX(30px) !important;
+          transform: translateX(30px) !important; }
 
 #parallaxCounter,
 #contactUsParallax,
@@ -2609,8 +2625,9 @@ img {
 
   .section {
     display: block;
-    padding-top: 80px;
-    padding-bottom: 80px; } }
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 70px 0; } }
 [class*="col-"] {
   padding: 0 15px;
   -webkit-box-sizing: border-box;

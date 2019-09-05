@@ -9,8 +9,8 @@
 
   .section {
     display: block;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    box-sizing: border-box;
+    padding:70px 0;
   }
 }
 

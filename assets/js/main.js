@@ -11,6 +11,12 @@ $(document).ready(function () {
             $header.removeClass('scrolled');
         }
 
+        // if(scrollTop){
+        //     $header.addClass('scrolled');
+        // }else{
+        //     $header.removeClass('scrolled');
+        // }
+
     });
 
 });

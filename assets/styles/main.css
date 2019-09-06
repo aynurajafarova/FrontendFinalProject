@@ -40,7 +40,7 @@
     color: #585ce9; }
 
 .heading-content {
-  padding-top: 20px; }
+  margin-top: 20px; }
   .heading-content h1 {
     font-size: 28px;
     line-height: 40px;
@@ -374,6 +374,11 @@
   overflow: hidden;
   text-align: center;
   padding-bottom: 35px;
+  opacity: 0;
+  -webkit-transform: translateY(45px);
+          transform: translateY(45px);
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
   cursor: pointer; }
   .pricing-item .pricing-header {
     border: 1px solid #f7fafd;

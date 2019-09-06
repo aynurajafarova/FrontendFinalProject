@@ -1,3 +1,7 @@
+// %nav-bar-style {
+
+// }
+
 #header-area {
   position: fixed;
   left: 0px;
@@ -87,6 +91,82 @@
   &:after {
     clear: both;
   }
+  .menu-trigger {
+    float: right;
+    &-icon {
+      cursor: pointer;
+      float: right;
+      span {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 2px;
+        background-color: black;
+        transition: 0.5s ease;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          background-color: black;
+          bottom: 10px;
+          transition: 0.5s ease;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          background-color: black;
+          top: 10px;
+          transition: 0.5s ease;
+        }
+      }
+    }
+    .menu-bar {
+      display: none;
+      margin-top: 18px;
+      background-color: white;
+      position: fixed;
+      width: 85%;
+      li {
+        padding: 15px 0;
+        a {
+          font-size: 18px;
+          color: $color-fiord;
+          margin-left: 4%;
+          i {
+            font-size: 12px;
+            float: right;
+            margin-right: 4%;
+          }
+        }
+      }
+      .submenu {
+        &-list {
+          display: none;
+          margin-top: 10px;
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}
+
+.menu-trigger-icon.open {
+  span {
+    background-color: transparent !important;
+    &::after {
+      transform: rotate(-45deg) translate(-10px, 7px);
+    }
+    &::before {
+      transform: rotate(45deg) translate(-6px, -6px);
+    }
+  }
+}
+
+.active {
+  display: block !important;
 }
 
 .scrolled {

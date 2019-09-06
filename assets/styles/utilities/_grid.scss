@@ -10,7 +10,12 @@
   .section {
     display: block;
     box-sizing: border-box;
-    padding:70px 0;
+    padding: 70px 0;
+  }
+  #header-area {
+    .menu-trigger {
+      display: none;
+    }
   }
 }
 

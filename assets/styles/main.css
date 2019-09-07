@@ -197,24 +197,24 @@
   min-height: 315px; }
 
 #contactUsParallax {
-  min-height: 215px; }
+  min-height: 250px; }
 
 #headingParallax {
   min-height: 350px; }
   #headingParallax .parallax-mirror {
     background-image: url("../images/home/2.jpg"); }
-    #headingParallax .parallax-mirror .about-us-content {
+    #headingParallax .parallax-mirror .parallax-content {
       position: relative;
       z-index: 10;
-      top: 100px; }
-      #headingParallax .parallax-mirror .about-us-content h1 {
+      top: 150px; }
+      #headingParallax .parallax-mirror .parallax-content h1 {
         position: relative;
         font-size: 36px;
         color: #fff;
         line-height: 46px;
         letter-spacing: 1.4px;
         padding-bottom: 5px; }
-        #headingParallax .parallax-mirror .about-us-content h1::after {
+        #headingParallax .parallax-mirror .parallax-content h1::after {
           content: "";
           position: absolute;
           background-color: #fff;
@@ -224,16 +224,16 @@
           right: 0;
           bottom: 0;
           margin: auto; }
-      #headingParallax .parallax-mirror .about-us-content ul {
+      #headingParallax .parallax-mirror .parallax-content ul {
         margin-top: 15px; }
-        #headingParallax .parallax-mirror .about-us-content ul li {
+        #headingParallax .parallax-mirror .parallax-content ul li {
           color: #e5e9f7;
           font-size: 14px;
           margin-left: 10px; }
-          #headingParallax .parallax-mirror .about-us-content ul li a {
+          #headingParallax .parallax-mirror .parallax-content ul li a {
             font-size: 14px;
             color: #fff; }
-          #headingParallax .parallax-mirror .about-us-content ul li i {
+          #headingParallax .parallax-mirror .parallax-content ul li i {
             font-size: 10px;
             margin-left: 8px; }
     #headingParallax .parallax-mirror::after {
@@ -251,7 +251,7 @@
   background-position: center;
   position: absolute;
   width: 100%;
-  height: 315px; }
+  height: 100%; }
   .parallax-mirror::after {
     content: "";
     position: absolute;
@@ -297,7 +297,7 @@
     position: relative;
     z-index: 8;
     text-align: center;
-    top: 100px; }
+    top: 80px; }
     .parallax-mirror .contact-us-info p {
       font-size: 22px;
       color: #fff;
@@ -583,7 +583,7 @@
 
 #ourMission {
   position: relative;
-  height: 500px; }
+  height: 600px; }
   #ourMission .details-img {
     left: 130px; }
   #ourMission .details-content {
@@ -592,7 +592,7 @@
 
 #ourVision {
   position: relative;
-  height: 500px; }
+  height: 600px; }
   #ourVision .details-img {
     right: 15px; }
   #ourVision .details-content {
@@ -1053,54 +1053,58 @@ aside .aside-contact-us {
         transition: 0.5s ease; }
   #header-area:after {
     clear: both; }
-  #header-area .menu-trigger {
-    float: right; }
-    #header-area .menu-trigger-icon {
-      cursor: pointer;
-      float: right; }
-      #header-area .menu-trigger-icon span {
-        display: block;
-        position: relative;
-        width: 30px;
+  #header-area .menu-trigger-icon {
+    cursor: pointer;
+    float: right;
+    display: block;
+    padding: 12px 0px; }
+    #header-area .menu-trigger-icon span {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 2px;
+      background-color: black;
+      -webkit-transition: 0.5s ease;
+      transition: 0.5s ease;
+      cursor: pointer; }
+      #header-area .menu-trigger-icon span::after {
+        content: "";
+        position: absolute;
+        width: 100%;
         height: 2px;
         background-color: black;
+        bottom: 10px;
         -webkit-transition: 0.5s ease;
         transition: 0.5s ease; }
-        #header-area .menu-trigger-icon span::after {
-          content: "";
-          position: absolute;
-          width: 100%;
-          height: 2px;
-          background-color: black;
-          bottom: 10px;
-          -webkit-transition: 0.5s ease;
-          transition: 0.5s ease; }
-        #header-area .menu-trigger-icon span::before {
-          content: "";
-          position: absolute;
-          width: 100%;
-          height: 2px;
-          background-color: black;
-          top: 10px;
-          -webkit-transition: 0.5s ease;
-          transition: 0.5s ease; }
-    #header-area .menu-trigger .menu-bar {
-      display: none;
-      margin-top: 18px;
-      background-color: white;
-      position: fixed;
-      width: 85%; }
-      #header-area .menu-trigger .menu-bar li {
-        padding: 15px 0; }
-        #header-area .menu-trigger .menu-bar li a {
-          font-size: 18px;
-          color: #3b566e;
-          margin-left: 4%; }
-          #header-area .menu-trigger .menu-bar li a i {
-            font-size: 12px;
-            float: right;
-            margin-right: 4%; }
+      #header-area .menu-trigger-icon span::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        top: 10px;
+        -webkit-transition: 0.5s ease;
+        transition: 0.5s ease; }
+  #header-area .menu-trigger .menu-bar {
+    display: none;
+    margin-top: 32px;
+    background-color: white; }
+    #header-area .menu-trigger .menu-bar li {
+      padding: 15px 0; }
+      #header-area .menu-trigger .menu-bar li a {
+        font-size: 18px;
+        color: #3b566e;
+        margin-left: 4%; }
+        #header-area .menu-trigger .menu-bar li a i {
+          font-size: 12px;
+          float: right;
+          margin-right: 4%; }
+    #header-area .menu-trigger .menu-bar .submenu {
+      -webkit-transition: 0.3s ease;
+      transition: 0.3s ease; }
       #header-area .menu-trigger .menu-bar .submenu-list {
+        -webkit-transition: 0.3s ease;
+        transition: 0.3s ease;
         display: none;
         margin-top: 10px;
         margin-left: 30px; }
@@ -1336,38 +1340,54 @@ aside .aside-contact-us {
     padding-top: 30px;
     padding-bottom: 30px; }
 
+  #header-area {
+    background-color: white; }
+    #header-area .header-nav-bar {
+      display: none; }
+    #header-area .buttons {
+      display: none; }
+    #header-area .menu-trigger {
+      display: inline-block; }
+
   .heading-content p {
     padding: 0px 0px 40px 0px; }
 
-  #welcome .welcome-content .heading-content {
-    text-align: center; }
-  #welcome .welcome-images-group .first-img {
-    height: 290px; }
-    #welcome .welcome-images-group .first-img img {
+  #welcome {
+    padding-top: 90px; }
+    #welcome .welcome-content .heading-content {
+      text-align: center; }
+    #welcome .welcome-images-group .first-img {
       height: 290px; }
-  #welcome .welcome-images-group .second-img i {
-    left: 60px;
-    top: 60px;
-    font-size: 50px; }
-  #welcome .welcome-images-group .third-img {
-    height: 200px; }
-  #welcome .welcome-images-group .fourth-img .img-text {
-    right: 0;
-    top: 65px;
-    width: 160px;
-    text-align: center; }
+      #welcome .welcome-images-group .first-img img {
+        height: 290px; }
+    #welcome .welcome-images-group .second-img i {
+      left: 60px;
+      top: 60px;
+      font-size: 50px; }
+    #welcome .welcome-images-group .third-img {
+      height: 200px; }
+    #welcome .welcome-images-group .fourth-img .img-text {
+      right: 0;
+      top: 65px;
+      width: 160px;
+      text-align: center; }
 
   #features .features-small-item .small-item-desc {
     padding: 20px 0px; }
+
+  #services .items-list-img-right img {
+    margin-left: -70px; }
 
   #services .items-list,
   #designDevelopment .items-list {
     display: block; }
 
   #parallaxCounter {
-    min-height: 654px; }
+    min-height: 830px; }
     #parallaxCounter .parallax-mirror {
       min-height: 100%; }
+      #parallaxCounter .parallax-mirror .count-item {
+        top: -33px; }
 
   #ourTeam .team-item {
     margin-bottom: 25%; }
@@ -1375,10 +1395,8 @@ aside .aside-contact-us {
   #pricingPlans .pricing-item {
     margin-bottom: 10%; }
 
-  #contactUsParallax {
-    background-color: #f7fafd; }
-    #contactUsParallax .contact-us-info {
-      top: 60px; } }
+  #contactUsParallax .contact-us-info {
+    top: 55px; } }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .col-sm-1 {
     width: 8.3333333333%; }
@@ -1420,17 +1438,30 @@ aside .aside-contact-us {
     padding-top: 30px;
     padding-bottom: 30px; }
 
-  .welcome-content {
-    text-align: center; }
+  #header-area {
+    background-color: white; }
+    #header-area .header-nav-bar {
+      display: none; }
+    #header-area .buttons {
+      display: none; }
+    #header-area .menu-trigger {
+      display: inline-block; }
+
+  #welcome {
+    padding-top: 90px; }
+    #welcome .welcome-content {
+      text-align: center; }
 
   #services .items-list,
   #designDevelopment .items-list {
     display: block; }
 
   #parallaxCounter {
-    min-height: 850px; }
+    min-height: 830px; }
     #parallaxCounter .parallax-mirror {
       min-height: 100%; }
+      #parallaxCounter .parallax-mirror .count-item {
+        top: -33px; }
 
   .team-item {
     margin-bottom: 25%; }
@@ -1440,10 +1471,8 @@ aside .aside-contact-us {
   .pricing-item {
     margin-bottom: 5%; }
 
-  #contactUsParallax {
-    background-color: #f7fafd; }
-    #contactUsParallax .parallax-mirror .contact-us-info {
-      top: 70px; } }
+  #contactUsParallax .parallax-mirror .contact-us-info {
+    top: 50px; } }
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
   .col-md-1 {
     width: 8.3333333333%; }
@@ -1481,27 +1510,40 @@ aside .aside-contact-us {
   .col-md-12 {
     width: 100%; }
 
+  #header-area {
+    background-color: white; }
+    #header-area .header-nav-bar {
+      display: none; }
+    #header-area .buttons {
+      display: none; }
+    #header-area .menu-trigger {
+      display: inline-block; }
+
+  #welcome {
+    padding-top: 90px; }
+    #welcome .welcome-content {
+      text-align: center; }
+
   .section {
     padding-top: 30px;
     padding-bottom: 30px; }
 
-  .welcome-content {
-    text-align: center; }
-
   #services .heading-content {
     margin-top: 10%; }
+  #services .items-list-img-right img {
+    margin-left: 15%; }
 
-  .items-list-img {
-    margin-bottom: 10%; }
-    .items-list-img img {
-      margin-left: 15%; }
+  #designDevelopment .items-list-img-left img {
+    margin-left: 15%; }
 
   #parallaxCounter {
     min-height: 440px; }
     #parallaxCounter .parallax-mirror {
       height: 100%; }
-      #parallaxCounter .parallax-mirror .count-item strong::after {
-        left: 90px; }
+      #parallaxCounter .parallax-mirror .count-item {
+        top: -30px; }
+        #parallaxCounter .parallax-mirror .count-item strong::after {
+          left: 90px; }
 
   .team-item {
     margin-bottom: 25%; }
@@ -1511,8 +1553,8 @@ aside .aside-contact-us {
   .pricing-item {
     margin-bottom: 10%; }
 
-  #contactUsParallax {
-    background-color: #f7fafd; } }
+  #contactUsParallax .contact-us-info {
+    top: 60px; } }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .col-lg-1 {
     width: 8.3333333333%; }
@@ -1554,6 +1596,13 @@ aside .aside-contact-us {
     padding-top: 80px;
     padding-bottom: 80px; }
 
+  #header-area {
+    background-color: white; }
+    #header-area .menu-trigger {
+      display: none; }
+      #header-area .menu-trigger-icon {
+        display: none; }
+
   #welcome .welcome-images-group .fourth-img .img-text {
     top: 65px;
     width: 165px; }
@@ -1563,7 +1612,10 @@ aside .aside-contact-us {
     .team-item .team-details .team-info p {
       padding: 0px 10px; }
     .team-item .team-details .team-member-img {
-      top: 250px; } }
+      top: 250px; }
+
+  #contactUsParallax .contact-us-info {
+    top: 70px; } }
 #askedQuestions .heading-content h1 {
   font-size: 30px;
   color: #585ce9; }
@@ -1635,6 +1687,19 @@ aside .aside-contact-us {
   .col-xs-12 {
     width: 100%; }
 
+  #header-area .header-nav-bar {
+    display: none; }
+  #header-area .buttons {
+    display: none; }
+  #header-area .menu-trigger {
+    display: inline-block; }
+
+  #headingParallax .parallax-mirror {
+    height: 255px;
+    top: 95px; }
+    #headingParallax .parallax-mirror .parallax-content {
+      top: 60px; }
+
   #askedQuestions .questions-list {
     margin-top: 10%; } }
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -1673,6 +1738,19 @@ aside .aside-contact-us {
 
   .col-sm-12 {
     width: 100%; }
+
+  #header-area .header-nav-bar {
+    display: none; }
+  #header-area .buttons {
+    display: none; }
+  #header-area .menu-trigger {
+    display: inline-block; }
+
+  #headingParallax .parallax-mirror {
+    height: 255px;
+    top: 95px; }
+    #headingParallax .parallax-mirror .parallax-content {
+      top: 60px; }
 
   #askedQuestions .questions-list {
     margin-top: 10%; }
@@ -1716,6 +1794,19 @@ aside .aside-contact-us {
   .col-md-12 {
     width: 100%; }
 
+  #header-area .header-nav-bar {
+    display: none; }
+  #header-area .buttons {
+    display: none; }
+  #header-area .menu-trigger {
+    display: inline-block; }
+
+  #headingParallax .parallax-mirror {
+    height: 255px;
+    top: 95px; }
+    #headingParallax .parallax-mirror .parallax-content {
+      top: 80px; }
+
   #askedQuestions .questions-list {
     margin-top: 10%; }
 
@@ -1756,7 +1847,13 @@ aside .aside-contact-us {
     width: 91.6666666667%; }
 
   .col-lg-12 {
-    width: 100%; } }
+    width: 100%; }
+
+  #headingParallax .parallax-mirror {
+    height: 255px;
+    top: 95px; }
+    #headingParallax .parallax-mirror .parallax-content {
+      top: 80px; } }
 .get-in-touch-text p {
   font-size: 14px;
   letter-spacing: 0.6px;
@@ -1831,6 +1928,19 @@ aside .aside-contact-us {
   .col-xs-12 {
     width: 100%; }
 
+  #header-area .header-nav-bar {
+    display: none; }
+  #header-area .buttons {
+    display: none; }
+  #header-area .menu-trigger {
+    display: inline-block; }
+
+  #headingParallax .parallax-mirror {
+    height: 255px;
+    top: 95px; }
+    #headingParallax .parallax-mirror .parallax-content {
+      top: 60px; }
+
   #map .map-content {
     width: 100%;
     position: relative; } }
@@ -1870,6 +1980,19 @@ aside .aside-contact-us {
 
   .col-sm-12 {
     width: 100%; }
+
+  #header-area .header-nav-bar {
+    display: none; }
+  #header-area .buttons {
+    display: none; }
+  #header-area .menu-trigger {
+    display: inline-block; }
+
+  #headingParallax .parallax-mirror {
+    height: 255px;
+    top: 95px; }
+    #headingParallax .parallax-mirror .parallax-content {
+      top: 60px; }
 
   #map .map-content {
     width: 100%;
@@ -1911,6 +2034,19 @@ aside .aside-contact-us {
   .col-md-12 {
     width: 100%; }
 
+  #header-area .header-nav-bar {
+    display: none; }
+  #header-area .buttons {
+    display: none; }
+  #header-area .menu-trigger {
+    display: inline-block; }
+
+  #headingParallax .parallax-mirror {
+    height: 255px;
+    top: 95px; }
+    #headingParallax .parallax-mirror .parallax-content {
+      top: 80px; }
+
   #map .map-content {
     width: 100%;
     position: relative; } }
@@ -1949,7 +2085,13 @@ aside .aside-contact-us {
     width: 91.6666666667%; }
 
   .col-lg-12 {
-    width: 100%; } }
+    width: 100%; }
+
+  #headingParallax .parallax-mirror {
+    height: 255px;
+    top: 95px; }
+    #headingParallax .parallax-mirror .parallax-content {
+      top: 80px; } }
 @media (max-width: 575.98px) {
   .col-xs-1 {
     width: 8.3333333333%; }
@@ -1994,6 +2136,12 @@ aside .aside-contact-us {
   #header-area .menu-trigger {
     display: inline-block; }
 
+  #headingParallax .parallax-mirror {
+    height: 255px;
+    top: 95px; }
+    #headingParallax .parallax-mirror .parallax-content {
+      top: 60px; }
+
   #features .heading-content p {
     padding: 0px 0px 20px 0px;
     letter-spacing: 0.5px; }
@@ -2001,7 +2149,7 @@ aside .aside-contact-us {
     margin-top: 20px; }
 
   #ourMission {
-    height: 625px; }
+    height: 680px; }
     #ourMission .details-img {
       width: 90%;
       left: 25px; }
@@ -2011,13 +2159,13 @@ aside .aside-contact-us {
     #ourMission .details-content {
       width: 90%;
       position: relative;
-      top: 52%;
+      top: 46%;
       left: 5%; }
       #ourMission .details-content p {
         padding: 20px 10px 5px; }
 
   #ourVision {
-    height: 825px; }
+    height: 760px; }
     #ourVision .details-img {
       width: 90%;
       left: 30px; }
@@ -2027,7 +2175,7 @@ aside .aside-contact-us {
     #ourVision .details-content {
       width: 90%;
       position: relative;
-      top: 48%;
+      top: 52%;
       left: 5%; }
 
   #footer-side .footer-contact-us {
@@ -2075,6 +2223,12 @@ aside .aside-contact-us {
     display: none; }
   #header-area .menu-trigger {
     display: inline-block; }
+
+  #headingParallax .parallax-mirror {
+    height: 255px;
+    top: 95px; }
+    #headingParallax .parallax-mirror .parallax-content {
+      top: 60px; }
 
   #features .heading-content p {
     padding: 0px 0px 20px 0px;
@@ -2160,11 +2314,17 @@ aside .aside-contact-us {
   #header-area .menu-trigger {
     display: inline-block; }
 
+  #headingParallax .parallax-mirror {
+    height: 255px;
+    top: 95px; }
+    #headingParallax .parallax-mirror .parallax-content {
+      top: 80px; }
+
   #features .features-small-item {
     margin-top: 20px; }
 
   #ourMission {
-    height: 700px; }
+    height: 730px; }
     #ourMission .details-img {
       width: 90%;
       left: 45px; }
@@ -2173,11 +2333,11 @@ aside .aside-contact-us {
     #ourMission .details-content {
       width: 90%;
       position: relative;
-      top: 72%;
-      left: 6%; }
+      top: 67%;
+      left: 43px; }
 
   #ourVision {
-    height: 770px; }
+    height: 790px; }
     #ourVision .details-img {
       width: 90%;
       left: 45px; }
@@ -2186,8 +2346,8 @@ aside .aside-contact-us {
     #ourVision .details-content {
       width: 90%;
       position: relative;
-      top: 64%;
-      left: 6%; } }
+      top: 63%;
+      left: 43px; } }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .col-lg-1 {
     width: 8.3333333333%; }
@@ -2229,11 +2389,21 @@ aside .aside-contact-us {
     padding-top: 80px;
     padding-bottom: 80px; }
 
-  #ourMission .details-content {
+  #headingParallax .parallax-mirror {
+    height: 255px;
     top: 95px; }
+    #headingParallax .parallax-mirror .parallax-content {
+      top: 80px; }
 
-  #ourVision .details-content {
-    top: 86px; } }
+  #ourMission {
+    height: 450px; }
+    #ourMission .details-content {
+      top: 95px; }
+
+  #ourVision {
+    height: 450px; }
+    #ourVision .details-content {
+      top: 86px; } }
 @media (max-width: 575.98px) {
   .col-xs-1 {
     width: 8.3333333333%; }
@@ -2269,7 +2439,23 @@ aside .aside-contact-us {
     width: 91.6666666667%; }
 
   .col-xs-12 {
-    width: 100%; } }
+    width: 100%; }
+
+  #header-area .header-nav-bar {
+    display: none; }
+  #header-area .buttons {
+    display: none; }
+  #header-area .menu-trigger {
+    display: inline-block; }
+
+  #headingParallax .parallax-mirror {
+    height: 255px;
+    top: 95px; }
+    #headingParallax .parallax-mirror .parallax-content {
+      top: 60px; }
+      #headingParallax .parallax-mirror .parallax-content h1 {
+        font-size: 26px;
+        text-align: center; } }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .col-sm-1 {
     width: 8.3333333333%; }
@@ -2305,7 +2491,23 @@ aside .aside-contact-us {
     width: 91.6666666667%; }
 
   .col-sm-12 {
-    width: 100%; } }
+    width: 100%; }
+
+  #header-area .header-nav-bar {
+    display: none; }
+  #header-area .buttons {
+    display: none; }
+  #header-area .menu-trigger {
+    display: inline-block; }
+
+  #headingParallax .parallax-mirror {
+    height: 255px;
+    top: 95px; }
+    #headingParallax .parallax-mirror .parallax-content {
+      top: 60px; }
+      #headingParallax .parallax-mirror .parallax-content h1 {
+        font-size: 26px;
+        text-align: center; } }
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
   .col-md-1 {
     width: 8.3333333333%; }
@@ -2341,7 +2543,23 @@ aside .aside-contact-us {
     width: 91.6666666667%; }
 
   .col-md-12 {
-    width: 100%; } }
+    width: 100%; }
+
+  #header-area .header-nav-bar {
+    display: none; }
+  #header-area .buttons {
+    display: none; }
+  #header-area .menu-trigger {
+    display: inline-block; }
+
+  #headingParallax .parallax-mirror {
+    height: 255px;
+    top: 95px; }
+    #headingParallax .parallax-mirror .parallax-content {
+      top: 80px; }
+      #headingParallax .parallax-mirror .parallax-content h1 {
+        font-size: 26px;
+        text-align: center; } }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .col-lg-1 {
     width: 8.3333333333%; }
@@ -2415,11 +2633,21 @@ aside .aside-contact-us {
   .col-xs-12 {
     width: 100%; }
 
-  #headingParallax .parallax-mirror .about-us-content {
-    top: 45px; }
-    #headingParallax .parallax-mirror .about-us-content h1 {
-      font-size: 26px;
-      text-align: center; }
+  #header-area .header-nav-bar {
+    display: none; }
+  #header-area .buttons {
+    display: none; }
+  #header-area .menu-trigger {
+    display: inline-block; }
+
+  #headingParallax .parallax-mirror {
+    height: 255px;
+    top: 95px; }
+    #headingParallax .parallax-mirror .parallax-content {
+      top: 60px; }
+      #headingParallax .parallax-mirror .parallax-content h1 {
+        font-size: 26px;
+        text-align: center; }
 
   .blog-post-big {
     margin-bottom: 5%; }
@@ -2465,11 +2693,21 @@ aside .aside-contact-us {
   .col-sm-12 {
     width: 100%; }
 
-  #headingParallax .parallax-mirror .about-us-content {
-    top: 45px; }
-    #headingParallax .parallax-mirror .about-us-content h1 {
-      font-size: 26px;
-      text-align: center; }
+  #header-area .header-nav-bar {
+    display: none; }
+  #header-area .buttons {
+    display: none; }
+  #header-area .menu-trigger {
+    display: inline-block; }
+
+  #headingParallax .parallax-mirror {
+    height: 255px;
+    top: 95px; }
+    #headingParallax .parallax-mirror .parallax-content {
+      top: 60px; }
+      #headingParallax .parallax-mirror .parallax-content h1 {
+        font-size: 26px;
+        text-align: center; }
 
   .blog-post-big {
     margin-bottom: 5%; }
@@ -2515,11 +2753,21 @@ aside .aside-contact-us {
   .col-md-12 {
     width: 100%; }
 
-  #headingParallax .parallax-mirror .about-us-content {
-    top: 45px; }
-    #headingParallax .parallax-mirror .about-us-content h1 {
-      font-size: 26px;
-      text-align: center; }
+  #header-area .header-nav-bar {
+    display: none; }
+  #header-area .buttons {
+    display: none; }
+  #header-area .menu-trigger {
+    display: inline-block; }
+
+  #headingParallax .parallax-mirror {
+    height: 255px;
+    top: 95px; }
+    #headingParallax .parallax-mirror .parallax-content {
+      top: 80px; }
+      #headingParallax .parallax-mirror .parallax-content h1 {
+        font-size: 26px;
+        text-align: center; }
 
   .post-comment {
     margin-bottom: 5%; } }
@@ -2792,9 +3040,12 @@ img {
     padding: 70px 0; }
 
   #header-area .menu-trigger {
-    display: none; } }
+    display: none; }
+    #header-area .menu-trigger-icon {
+      display: none; } }
 [class*="col-"] {
   padding: 0 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+
 /*# sourceMappingURL=main.css.map */

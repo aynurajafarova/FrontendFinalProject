@@ -2,7 +2,6 @@
   background-image: url("../images/header-bg.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  // height: 500px;
   .welcome-images-group {
     margin-top: $mt-20 + 5;
     .first-img {
@@ -22,7 +21,6 @@
         }
       }
     }
-
     .second-img {
       position: relative;
       border-radius: 5px;
@@ -50,7 +48,6 @@
     &::after {
       clear: both;
     }
-
     .third-img {
       position: relative;
       border-radius: 5px;
@@ -94,7 +91,6 @@
         opacity: 0.8;
         border-radius: 5px;
       }
-
       .img-text {
         position: absolute;
         right: 0;
@@ -136,9 +132,23 @@
       width: percentage($i/$columns);
     }
   }
+
   .section {
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+
+  #header-area {
+    background-color: white;
+    .header-nav-bar {
+      display: none;
+    }
+    .buttons {
+      display: none;
+    }
+    .menu-trigger {
+      display: inline-block;
+    }
   }
 
   .heading-content {
@@ -148,6 +158,7 @@
   }
 
   #welcome {
+    padding-top: 90px;
     .welcome-content {
       .heading-content {
         text-align: center;
@@ -182,11 +193,17 @@
   }
 
   #features {
-    // margin-top: 60%;
-    // margin-top: 90%;
     .features-small-item {
       .small-item-desc {
         padding: 20px 0px;
+      }
+    }
+  }
+
+  #services {
+    .items-list-img-right {
+      img {
+        margin-left: -70px;
       }
     }
   }
@@ -199,20 +216,18 @@
   }
 
   #parallaxCounter {
-    min-height: 654px;
+    min-height: 830px;
     .parallax-mirror {
       min-height: 100%;
+      .count-item {
+        top: -33px;
+      }
     }
   }
 
   #ourTeam {
     .team-item {
       margin-bottom: 25%;
-      // .team-details{
-      //   .team-member-img{
-      //     left: 150px;
-      //   }
-      // }
     }
   }
 
@@ -223,9 +238,8 @@
   }
 
   #contactUsParallax {
-    background-color: $color-polar;
     .contact-us-info {
-      top: 60px;
+      top: 55px;
     }
   }
 }
@@ -238,13 +252,30 @@
       width: percentage($i/$columns);
     }
   }
+
   .section {
     padding-top: 30px;
     padding-bottom: 30px;
   }
 
-  .welcome-content {
-    text-align: center;
+  #header-area {
+    background-color: white;
+    .header-nav-bar {
+      display: none;
+    }
+    .buttons {
+      display: none;
+    }
+    .menu-trigger {
+      display: inline-block;
+    }
+  }
+
+  #welcome {
+    padding-top: 90px;
+    .welcome-content {
+      text-align: center;
+    }
   }
 
   #services,
@@ -255,9 +286,12 @@
   }
 
   #parallaxCounter {
-    min-height: 850px;
+    min-height: 830px;
     .parallax-mirror {
       min-height: 100%;
+      .count-item {
+        top: -33px;
+      }
     }
   }
 
@@ -277,10 +311,9 @@
   }
 
   #contactUsParallax {
-    background-color: $color-polar;
     .parallax-mirror {
       .contact-us-info {
-        top: 70px;
+        top: 50px;
       }
     }
   }
@@ -295,40 +328,56 @@
     }
   }
 
-  // .container {
-  //   width: 980px;
-  //   margin: auto;
-  // }
+  #header-area {
+    background-color: white;
+    .header-nav-bar {
+      display: none;
+    }
+    .buttons {
+      display: none;
+    }
+    .menu-trigger {
+      display: inline-block;
+    }
+  }
+
+  #welcome {
+    padding-top: 90px;
+    .welcome-content {
+      text-align: center;
+    }
+  }
+
   .section {
     padding-top: 30px;
     padding-bottom: 30px;
   }
 
-  .welcome-content {
-    text-align: center;
-  }
-
-  // #features {
-  //   margin-top: 35%;
-  // }
-
   #services {
     .heading-content {
       margin-top: 10%;
     }
-  }
-
-  .items-list-img {
-    margin-bottom: 10%;
-    img {
-      margin-left: 15%;
+    .items-list-img-right {
+      img {
+        margin-left: 15%;
+      }
     }
   }
+
+  #designDevelopment {
+    .items-list-img-left {
+      img {
+        margin-left: 15%;
+      }
+    }
+  }
+
   #parallaxCounter {
     min-height: 440px;
     .parallax-mirror {
       height: 100%;
       .count-item {
+        top: -30px;
         strong {
           &::after {
             left: 90px;
@@ -348,11 +397,15 @@
       }
     }
   }
+
   .pricing-item {
     margin-bottom: 10%;
   }
+
   #contactUsParallax {
-    background-color: $color-polar;
+    .contact-us-info {
+      top: 60px;
+    }
   }
 }
 
@@ -365,13 +418,19 @@
     }
   }
 
-  // .container {
-  //   width: 980px;
-  //   margin: auto;
-  // }
   .section {
     padding-top: 80px;
     padding-bottom: 80px;
+  }
+
+  #header-area {
+    background-color: white;
+    .menu-trigger {
+      display: none;
+      &-icon {
+        display: none;
+      }
+    }
   }
 
   #welcome {
@@ -396,6 +455,12 @@
       .team-member-img {
         top: 250px;
       }
+    }
+  }
+
+  #contactUsParallax {
+    .contact-us-info {
+      top: 70px;
     }
   }
 }

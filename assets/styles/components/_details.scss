@@ -5,7 +5,7 @@
 
 #ourMission {
   position: relative;
-  height: 500px;
+  height: 600px;
   .details {
     &-img {
       @extend %details-img;
@@ -13,22 +13,22 @@
     }
     &-content {
       right: 95px;
-    top: 136px;
+      top: 136px;
     }
   }
 }
 
 #ourVision {
   position: relative;
-  height: 500px;
+  height: 600px;
   .details {
     &-img {
       @extend %details-img;
       right: 15px;
     }
-    &-content{
+    &-content {
       left: 100px;
-    top: 125px;
+      top: 125px;
     }
   }
 }

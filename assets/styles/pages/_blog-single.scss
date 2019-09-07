@@ -6,10 +6,25 @@
       width: percentage($i/$columns);
     }
   }
+
+  #header-area {
+    .header-nav-bar {
+      display: none;
+    }
+    .buttons {
+      display: none;
+    }
+    .menu-trigger {
+      display: inline-block;
+    }
+  }
+
   #headingParallax {
     .parallax-mirror {
-      .about-us-content {
-        top: 45px;
+      height: 255px;
+      top: 95px;
+      .parallax-content {
+        top: 60px;
         h1 {
           font-size: 26px;
           text-align: center;
@@ -17,6 +32,7 @@
       }
     }
   }
+
   .blog-post-big {
     margin-bottom: 5%;
     .single-blog-post {
@@ -27,6 +43,7 @@
       }
     }
   }
+
   .post-comment {
     margin-bottom: 5%;
   }
@@ -40,10 +57,25 @@
       width: percentage($i/$columns);
     }
   }
+
+  #header-area {
+    .header-nav-bar {
+      display: none;
+    }
+    .buttons {
+      display: none;
+    }
+    .menu-trigger {
+      display: inline-block;
+    }
+  }
+
   #headingParallax {
     .parallax-mirror {
-      .about-us-content {
-        top: 45px;
+      height: 255px;
+      top: 95px;
+      .parallax-content {
+        top: 60px;
         h1 {
           font-size: 26px;
           text-align: center;
@@ -51,6 +83,7 @@
       }
     }
   }
+
   .blog-post-big {
     margin-bottom: 5%;
     .single-blog-post {
@@ -61,6 +94,7 @@
       }
     }
   }
+
   .post-comment {
     margin-bottom: 5%;
   }
@@ -74,10 +108,25 @@
       width: percentage($i/$columns);
     }
   }
+
+  #header-area {
+    .header-nav-bar {
+      display: none;
+    }
+    .buttons {
+      display: none;
+    }
+    .menu-trigger {
+      display: inline-block;
+    }
+  }
+
   #headingParallax {
     .parallax-mirror {
-      .about-us-content {
-        top: 45px;
+      height: 255px;
+      top: 95px;
+      .parallax-content {
+        top: 80px;
         h1 {
           font-size: 26px;
           text-align: center;

@@ -16,18 +16,19 @@
 </head>
 
 <body>
-    <!-- *****Preloader Start***** -->
+    <!-- ***** Preloader Start ***** -->
     <div id="preloader">
         <div id="loader">
             <div id="shadow"></div>
             <div id="box"></div>
         </div>
     </div>
-    <!-- *****Preloader End***** -->
+    <!-- ***** Preloader End ***** -->
+    <!-- ***** Header Area Start ***** -->
     <header id='header-area' class="bg-color-white">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-xl-12">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                     <div class="logo">
                         <a href="index.html">
                             <img src="./assets/images/jirono_logo.png" alt="jirono_logo">
@@ -55,6 +56,33 @@
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
+                    <!-- ***** Menu Trigger Start ***** -->
+                    <a href="#" class="menu-trigger-icon">
+                        <span></span>
+                    </a>
+                    <nav class="menu-trigger col-xs-12 col-sm-12 col-md-12">
+                        <ul class="menu-bar">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="submenu"><a href="#">Discover <i class="icon-chevron-down-solid"></i> </a>
+                                <ul class="submenu-list">
+                                    <li><a href="#services">Features</a></li>
+                                    <li><a href="#ourTeam">Our Team</a></li>
+                                    <li><a href="#pricingPlans">Pricing Plans</a></li>
+                                    <li><a href="#blogPosts">Latests Blogs</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu"><a href="#">Pages <i class="icon-chevron-down-solid"></i> </a>
+                                <ul class="submenu-list">
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="#">Features</a></li>
+                                    <li><a href="faq.html">FAQ's</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <!-- ***** Menu Trigger End ***** -->
                     <div class="buttons">
                         <a href="#" class="nav-bar-btn sign-in-btn">Sign in</a>
                         <a href="#" class="nav-bar-btn sign-up-btn">Sign up</a>
@@ -63,14 +91,17 @@
             </div>
         </div>
     </header>
+    <!-- ***** Header Area End ***** -->
+    <!-- ***** Main Content Start ***** -->
     <main>
-        <section id="headingParallax" class="section">
+        <!-- ***** Parallax Start ***** -->
+        <section id="headingParallax">
             <div class="parallax-mirror">
                 <div class="container">
                     <div class="col-xl-12">
                         <div class="row">
-                            <div class="about-us-content">
-                                <div class="col-xl-12">
+                            <div class="parallax-content">
+                                <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12">
                                     <h1>Blog</h1>
                                 </div>
                                 <div class="col-xl-12">
@@ -88,6 +119,8 @@
                 </div>
             </div>
         </section>
+        <!-- ***** Parallax End ***** -->
+        <!-- ***** Big Blog Post Start ***** -->
         <section class="section bg-color-polar">
             <div class="container">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -95,7 +128,7 @@
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
                             <div class="blog-post-big text-center">
                                 <div class="blog-post-big-img">
-                                    <img src="./assets/images/blog/blog-1.jpg" alt="">
+                                    <img src="./assets/images/blog/blog-1.jpg" alt="blog-1">
                                     <div class="blog-post-big-date">
                                         <strong>Apr</strong>
                                         <span>09</span>
@@ -115,11 +148,12 @@
                                 </div>
                                 <a href="blog-single.html" class="primary-btn">read more</a>
                             </div>
+                            <!-- ***** Small Blog Post Start ***** -->
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                     <div class="blog-post text-center">
                                         <div class="blog-post-img">
-                                            <img src="./assets/images/blog/blog-2.jpg" alt="blog-post-1">
+                                            <img src="./assets/images/blog/blog-2.jpg" alt="blog-post-2">
                                             <div class="blog-post-date">
                                                 <strong>Apr</strong>
                                                 <span>09</span>
@@ -209,6 +243,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- ***** Small Blog Post End ***** -->
                             <nav class="pagination">
                                 <ul class="row">
                                     <li><a href="#">«</a></li>
@@ -219,6 +254,7 @@
                                 </ul>
                             </nav>
                         </div>
+                        <!-- ***** Aside Start ***** -->
                         <aside class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
                             <form class="search">
                                 <input type="text" placeholder="Search">
@@ -300,18 +336,22 @@
                                 </div>
                             </div>
                         </aside>
+                        <!-- ***** Aside End ***** -->
                     </div>
                 </div>
             </div>
         </section>
+        <!-- ***** Big Blog Post End ***** -->
     </main>
+    <!-- ***** Main Content End ***** -->
+    <!-- ***** Footer Start ***** -->
     <footer id="footer-side">
         <div class="container">
             <div class="col-xl-12">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
                         <div class="logo">
-                            <img src="./assets/images/logo-white.png" alt="">
+                            <img src="./assets/images/logo-white.png" alt="jirono_logo">
                         </div>
                         <div class="footer-logo-text">
                             <p>Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros.
@@ -385,11 +425,14 @@
             </div>
         </div>
     </footer>
+    <!-- ***** Footer End ***** -->
+    <!-- ***** jQuery ***** -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="./assets/js/preloader.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/parallax.js"></script>
+    <script src="./assets/js/menuTrigger.js"></script>
 </body>
 
 </html>

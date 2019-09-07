@@ -6,6 +6,32 @@
       width: percentage($i/$columns);
     }
   }
+
+  #header-area {
+    .header-nav-bar {
+      display: none;
+    }
+    .buttons {
+      display: none;
+    }
+    .menu-trigger {
+      display: inline-block;
+    }
+  }
+
+  #headingParallax {
+    .parallax-mirror {
+      height: 255px;
+      top: 95px;
+      .parallax-content {
+        top: 60px;
+        h1 {
+          font-size: 26px;
+          text-align: center;
+        }
+      }
+    }
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -16,6 +42,32 @@
       width: percentage($i/$columns);
     }
   }
+
+  #header-area {
+    .header-nav-bar {
+      display: none;
+    }
+    .buttons {
+      display: none;
+    }
+    .menu-trigger {
+      display: inline-block;
+    }
+  }
+
+  #headingParallax {
+    .parallax-mirror {
+      height: 255px;
+      top: 95px;
+      .parallax-content {
+        top: 60px;
+        h1 {
+          font-size: 26px;
+          text-align: center;
+        }
+      }
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -24,6 +76,32 @@
   @for $i from 1 through $columns {
     .col-md-#{$i} {
       width: percentage($i/$columns);
+    }
+  }
+
+  #header-area {
+    .header-nav-bar {
+      display: none;
+    }
+    .buttons {
+      display: none;
+    }
+    .menu-trigger {
+      display: inline-block;
+    }
+  }
+
+  #headingParallax {
+    .parallax-mirror {
+      height: 255px;
+      top: 95px;
+      .parallax-content {
+        top: 80px;
+        h1 {
+          font-size: 26px;
+          text-align: center;
+        }
+      }
     }
   }
 }

@@ -61,6 +61,29 @@
       width: percentage($i/$columns);
     }
   }
+
+  #header-area {
+    .header-nav-bar {
+      display: none;
+    }
+    .buttons {
+      display: none;
+    }
+    .menu-trigger {
+      display: inline-block;
+    }
+  }
+
+  #headingParallax {
+    .parallax-mirror {
+      height: 255px;
+      top: 95px;
+      .parallax-content {
+        top: 60px;
+      }
+    }
+  }
+
   #map {
     .map-content {
       width: 100%;
@@ -77,6 +100,29 @@
       width: percentage($i/$columns);
     }
   }
+
+  #header-area {
+    .header-nav-bar {
+      display: none;
+    }
+    .buttons {
+      display: none;
+    }
+    .menu-trigger {
+      display: inline-block;
+    }
+  }
+
+  #headingParallax {
+    .parallax-mirror {
+      height: 255px;
+      top: 95px;
+      .parallax-content {
+        top: 60px;
+      }
+    }
+  }
+
   #map {
     .map-content {
       width: 100%;
@@ -93,6 +139,29 @@
       width: percentage($i/$columns);
     }
   }
+
+  #header-area {
+    .header-nav-bar {
+      display: none;
+    }
+    .buttons {
+      display: none;
+    }
+    .menu-trigger {
+      display: inline-block;
+    }
+  }
+
+  #headingParallax {
+    .parallax-mirror {
+      height: 255px;
+      top: 95px;
+      .parallax-content {
+        top: 80px;
+      }
+    }
+  }
+
   #map {
     .map-content {
       width: 100%;
@@ -107,6 +176,16 @@
   @for $i from 1 through $columns {
     .col-lg-#{$i} {
       width: percentage($i/$columns);
+    }
+  }
+
+  #headingParallax {
+    .parallax-mirror {
+      height: 255px;
+      top: 95px;
+      .parallax-content {
+        top: 80px;
+      }
     }
   }
 }

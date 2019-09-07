@@ -8,16 +8,27 @@
   }
 
   #header-area {
-    .header-nav-bar{
+    .header-nav-bar {
       display: none;
     }
-    .buttons{
+    .buttons {
       display: none;
     }
-    .menu-trigger{
+    .menu-trigger {
       display: inline-block;
     }
   }
+
+  #headingParallax {
+    .parallax-mirror {
+      height: 255px;
+      top: 95px;
+      .parallax-content {
+        top: 60px;
+      }
+    }
+  }
+
   #features {
     .heading-content {
       p {
@@ -29,8 +40,9 @@
       margin-top: 20px;
     }
   }
+
   #ourMission {
-    height: 625px;
+    height: 680px;
     .details-img {
       width: 90%;
       left: 25px;
@@ -39,18 +51,20 @@
         height: 300px;
       }
     }
+
     .details-content {
       width: 90%;
       position: relative;
-      top: 52%;
+      top: 46%;
       left: 5%;
-      p{
+      p {
         padding: 20px 10px 5px;
       }
     }
   }
+
   #ourVision {
-    height: 825px;
+    height: 760px;
     .details-img {
       width: 90%;
       left: 30px;
@@ -62,10 +76,11 @@
     .details-content {
       width: 90%;
       position: relative;
-      top: 48%;
+      top: 52%;
       left: 5%;
     }
   }
+
   #footer-side {
     .footer-contact-us {
       margin-top: 40px;
@@ -81,15 +96,26 @@
       width: percentage($i/$columns);
     }
   }
+
   #header-area {
-    .header-nav-bar{
+    .header-nav-bar {
       display: none;
     }
-    .buttons{
+    .buttons {
       display: none;
     }
-    .menu-trigger{
+    .menu-trigger {
       display: inline-block;
+    }
+  }
+
+  #headingParallax {
+    .parallax-mirror {
+      height: 255px;
+      top: 95px;
+      .parallax-content {
+        top: 60px;
+      }
     }
   }
 
@@ -104,6 +130,7 @@
       margin-top: 20px;
     }
   }
+
   #ourMission {
     height: 670px;
     .details-img {
@@ -121,6 +148,7 @@
       left: 5%;
     }
   }
+
   #ourVision {
     height: 720px;
     .details-img {
@@ -138,6 +166,7 @@
       left: 5%;
     }
   }
+
   #footer-side {
     .footer-contact-us {
       margin-top: 40px;
@@ -154,25 +183,30 @@
     }
   }
 
-  //   .container {
-  //     max-width: 980px;
-  //     margin: auto;
-  //   }
-
   .section {
     padding-top: 30px;
     padding-bottom: 30px;
   }
 
   #header-area {
-    .header-nav-bar{
+    .header-nav-bar {
       display: none;
     }
-    .buttons{
+    .buttons {
       display: none;
     }
-    .menu-trigger{
+    .menu-trigger {
       display: inline-block;
+    }
+  }
+
+  #headingParallax {
+    .parallax-mirror {
+      height: 255px;
+      top: 95px;
+      .parallax-content {
+        top: 80px;
+      }
     }
   }
 
@@ -183,7 +217,7 @@
   }
 
   #ourMission {
-    height: 700px;
+    height: 730px;
     .details-img {
       width: 90%;
       left: 45px;
@@ -194,12 +228,13 @@
     .details-content {
       width: 90%;
       position: relative;
-      top: 72%;
-      left: 6%;
+      top: 67%;
+      left: 43px;
     }
   }
+
   #ourVision {
-    height: 770px;
+    height: 790px;
     .details-img {
       width: 90%;
       left: 45px;
@@ -210,8 +245,8 @@
     .details-content {
       width: 90%;
       position: relative;
-      top: 64%;
-      left: 6%;
+      top: 63%;
+      left: 43px;
     }
   }
 }
@@ -225,20 +260,30 @@
     }
   }
 
-  // .container {
-  //   width: 980px;
-  //   margin: auto;
-  // }
   .section {
     padding-top: 80px;
     padding-bottom: 80px;
   }
+
+  #headingParallax {
+    .parallax-mirror {
+      height: 255px;
+      top: 95px;
+      .parallax-content {
+        top: 80px;
+      }
+    }
+  }
+
   #ourMission {
+    height: 450px;
     .details-content {
       top: 95px;
     }
   }
+
   #ourVision {
+    height: 450px;
     .details-content {
       top: 86px;
     }

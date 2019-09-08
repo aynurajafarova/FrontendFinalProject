@@ -3,3 +3,44 @@
   -ms-transform: $property;
   transform: $property;
 }
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin col($infix) {
+  $columns: 12;
+  @for $i from 1 through $columns {
+    .col-#{$infix}-#{$i} {
+      width: percentage($i/$columns);
+    }
+  }
+}
+
+@mixin extra-small {
+  @media (max-width: 575.98px) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (min-width: 768px) and (max-width: 991.98px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    @content;
+  }
+}

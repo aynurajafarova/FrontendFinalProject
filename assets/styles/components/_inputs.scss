@@ -1,7 +1,7 @@
 %input-style {
   width: 100%;
   border: 1px solid $color-gallery;
-  border-radius: 5px;
+  border-radius: $base-border-radius;
   outline: none;
   box-sizing: border-box;
   padding: 20px 0 20px 15px;
@@ -22,8 +22,8 @@
     border: 1px solid $color-white;
     box-sizing: border-box;
     padding: 15px 0 15px 20px;
-    transition: 0.3s ease;
-    border-radius: 5px;
+    @include transition(0.3s ease);
+    border-radius: $base-border-radius;
     box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
     background-color: $color-white;
     font-size: 16px;
@@ -40,7 +40,7 @@
     height: 35px;
     width: 35px;
     color: $color-white;
-    border-radius: 5px;
+    border-radius: $base-border-radius;
     background-color: $color-royal-blue;
     outline: none;
     cursor: $pointer;

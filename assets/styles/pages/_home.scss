@@ -8,22 +8,22 @@
       position: relative;
       height: 350px;
       float: left;
-      border-radius: 5px;
+      border-radius: $base-border-radius;
       overflow: hidden;
       img {
         object-fit: cover;
-        border-radius: 5px;
+        border-radius: $base-border-radius;
         width: 100%;
         height: 350px;
-        transition: transform 0.3s ease;
+        @include transition(transform 0.3s ease);
         &:hover {
-          transform: scale(1.1);
+          @include transform(scale(1.1));
         }
       }
     }
     .second-img {
       position: relative;
-      border-radius: 5px;
+      border-radius: $base-border-radius;
       float: left;
       height: 180px;
       top: 15px;
@@ -31,7 +31,7 @@
       img {
         object-fit: cover;
         width: 100%;
-        transition: transform 0.3s ease;
+        @include transition(transform 0.3s ease);
         height: 180px;
         &:hover {
           transform: scale(1.1);
@@ -50,16 +50,16 @@
     }
     .third-img {
       position: relative;
-      border-radius: 5px;
+      border-radius: $base-border-radius;
       float: left;
       overflow: hidden;
       height: 250px;
       img {
-        border-radius: 5px;
+        border-radius: $base-border-radius;
         width: 100%;
         height: 250px;
         object-fit: cover;
-        transition: transform 0.3s ease;
+        @include transition(transform 0.3s ease);
         &:hover {
           transform: scale(1.1);
         }
@@ -67,7 +67,7 @@
     }
     .fourth-img {
       position: relative;
-      border-radius: 5px;
+      border-radius: $base-border-radius;
       float: right;
       overflow: hidden;
       height: 265px;
@@ -75,7 +75,7 @@
       img {
         height: 265px;
         width: 100%;
-        transition: transform 0.3s ease;
+        @include transition(transform 0.3s ease);
         &:hover {
           transform: scale(1.1);
         }
@@ -89,7 +89,7 @@
         width: 100%;
         height: 100%;
         opacity: 0.8;
-        border-radius: 5px;
+        border-radius: $base-border-radius;
       }
       .img-text {
         position: absolute;
@@ -125,13 +125,8 @@
 }
 
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-  $columns: 12;
-  @for $i from 1 through $columns {
-    .col-xs-#{$i} {
-      width: percentage($i/$columns);
-    }
-  }
+@include extra-small {
+  @include col(xs);
 
   .section {
     padding-top: 30px;
@@ -245,13 +240,8 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {
-  $columns: 12;
-  @for $i from 1 through $columns {
-    .col-sm-#{$i} {
-      width: percentage($i/$columns);
-    }
-  }
+@include small {
+  @include col(sm);
 
   .section {
     padding-top: 30px;
@@ -320,13 +310,8 @@
 }
 
 // Medium devices (tablets, 768px and up)
-@media screen and (min-width: 768px) and (max-width: 991.98px) {
-  $columns: 12;
-  @for $i from 1 through $columns {
-    .col-md-#{$i} {
-      width: percentage($i/$columns);
-    }
-  }
+@include medium {
+  @include col(md);
 
   #header-area {
     background-color: white;
@@ -410,13 +395,8 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  $columns: 12;
-  @for $i from 1 through $columns {
-    .col-lg-#{$i} {
-      width: percentage($i/$columns);
-    }
-  }
+@include large {
+  @include col(lg);
 
   .section {
     padding-top: 80px;

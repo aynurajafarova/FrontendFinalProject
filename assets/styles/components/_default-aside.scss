@@ -2,7 +2,7 @@ aside {
   .aside-nav-bar {
     background-color: $color-white;
     margin-top: 30px;
-    border-radius: $border-radius-5;
+    border-radius: $base-border-radius;
     ul {
       li {
         box-sizing: border-box;
@@ -16,7 +16,7 @@ aside {
           i {
             font-size: 10px;
             margin-right: 20px;
-            transition: 0.3s ease;
+            @include transition(0.3s ease);
           }
           span {
             float: right;
@@ -45,7 +45,7 @@ aside {
     padding: 30px 30px 20px;
     background-color: $color-white;
     margin-top: 30px;
-    border-radius: 5px;
+    border-radius: $base-border-radius;
     box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
     a {
       display: inline-block;
@@ -53,10 +53,10 @@ aside {
       font-size: 14px;
       margin-right: 10px;
       margin-bottom: 10px;
-      border-radius: 5px;
+      border-radius: $base-border-radius;
       color: $color-fiord;
       background-color: $color-wild-sand;
-      transition: 0.3s ease;
+      @include transition(0.3s ease);
       &:hover {
         background-color: $color-royal-blue;
         color: $color-white;
@@ -70,7 +70,7 @@ aside {
     img {
       width: 100%;
       height: 100%;
-      border-radius: $border-radius-5;
+      border-radius: $base-border-radius;
     }
     &:after {
       content: "";
@@ -80,7 +80,7 @@ aside {
       left: 0;
       right: 0;
       bottom: 0;
-      border-radius: $border-radius-5;
+      border-radius: $base-border-radius;
       opacity: 0.8;
     }
     &-text {

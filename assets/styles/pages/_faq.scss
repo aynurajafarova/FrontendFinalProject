@@ -17,17 +17,17 @@
         cursor: $pointer;
         &:hover {
           background-color: $color-polar;
-          transition: 0.5s ease;
+          @include transition(0.5s ease);
           h5 {
             padding-left: 15px;
-            transition: 0.5s ease;
+            @include transition(0.5s ease);
           }
         }
       }
       .answer {
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.5s ease;
+        @include transition(max-height 0.5s ease);
 
         p {
           padding: 20px 30px 10px;
@@ -43,13 +43,8 @@
 }
 
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-  $columns: 12;
-  @for $i from 1 through $columns {
-    .col-xs-#{$i} {
-      width: percentage($i/$columns);
-    }
-  }
+@include extra-small {
+  @include col(xs);
 
   #header-area {
     .header-nav-bar {
@@ -81,13 +76,8 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {
-  $columns: 12;
-  @for $i from 1 through $columns {
-    .col-sm-#{$i} {
-      width: percentage($i/$columns);
-    }
-  }
+@include small {
+  @include col(sm);
 
   #header-area {
     .header-nav-bar {
@@ -127,13 +117,8 @@
 }
 
 // Medium devices (tablets, 768px and up)
-@media screen and (min-width: 768px) and (max-width: 991.98px) {
-  $columns: 12;
-  @for $i from 1 through $columns {
-    .col-md-#{$i} {
-      width: percentage($i/$columns);
-    }
-  }
+@include medium {
+  @include col(md);
 
   #header-area {
     .header-nav-bar {
@@ -173,13 +158,8 @@
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  $columns: 12;
-  @for $i from 1 through $columns {
-    .col-lg-#{$i} {
-      width: percentage($i/$columns);
-    }
-  }
+@include large {
+  @include col(lg);
 
   #headingParallax {
     .parallax-mirror {

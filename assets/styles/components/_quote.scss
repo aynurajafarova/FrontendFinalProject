@@ -8,7 +8,7 @@
   background-color: $color-black-squeeze;
   box-sizing: border-box;
   padding: 30px 25px;
-  border-radius: 5px;
+  border-radius: $base-border-radius;
   margin-bottom: 30px;
   &-text {
     position: relative;

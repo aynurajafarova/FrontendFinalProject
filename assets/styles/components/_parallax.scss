@@ -97,7 +97,7 @@
     z-index: 7;
     color: $color-white;
     text-align: center;
-    transition: 0.3s ease;
+    @include transition(0.3s ease);
     strong {
       display: block;
       font-size: ($font-size * 3) - 8;
@@ -123,7 +123,7 @@
       letter-spacing: 0.83px;
     }
     &:hover {
-      transform: translateY(-15px);
+      @include transform(translateY(-15px));
     }
   }
   .contact-us-info {

@@ -3,7 +3,7 @@
     width: 70px;
     height: 70px;
     img {
-      border-radius: $border-radius-5;
+      border-radius: $base-border-radius;
     }
   }
 }
@@ -18,7 +18,7 @@
   background-color: $color-white;
   box-sizing: border-box;
   padding: 30px 20px;
-  border-radius: 5px;
+  border-radius: $base-border-radius;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
   h5 {
     @extend %comment-title;
@@ -60,9 +60,9 @@
         color: $color-bermuda-gray;
         padding: 5px 10px;
         background-color: $color-black-squeeze;
-        border-radius: $border-radius-5;
+        border-radius: $base-border-radius;
         letter-spacing: $base-letter-spacing;
-        transition: 0.5s ease;
+        @include transition(0.5s ease);
         i {
           margin-right: 8px;
         }
@@ -81,13 +81,13 @@
   }
 }
 
-.post-comment{
+.post-comment {
   background-color: $color-white;
   box-sizing: border-box;
-  padding:50px 30px;
-  border-radius: 5px;
+  padding: 50px 30px;
+  border-radius: $base-border-radius;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-  h5{
+  h5 {
     margin-left: 10px;
     @extend %comment-title;
   }

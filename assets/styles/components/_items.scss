@@ -4,14 +4,13 @@
     background-color: $color-white;
     height: 40px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: $base-border-radius;
     margin-bottom: $mb-20;
-    // margin-right: $mr-20;
     overflow: hidden;
     a {
       display: inline-block;
       position: relative;
-      transition: 0.3s ease;
+      @include transition(0.3s ease);
       height: 40px;
       width: 100%;
       top: 10px;
@@ -23,10 +22,10 @@
         background: $color-polar;
         top: -18px;
         left: -75px;
-        transform: rotate(60deg);
+        @include transform(rotate(60deg));
       }
       &:hover {
-        transform: translateX(5px);
+        @include transform(translateX(5px));
         &::after {
           background-color: $color-royal-blue !important;
         }
@@ -63,8 +62,8 @@
   &-right {
     margin-top: 65px;
     img {
-      transform: translateX(120px);
-      transition: 0.5s ease;
+      @include transform(translateX(120px));
+      @include transition(0.5s ease);
       opacity: 0;
       max-width: 100%;
     }
@@ -73,8 +72,8 @@
     margin-top: 80px;
     img {
       max-width: 100%;
-      transform: translateX(0px);
-      transition: 0.5s ease;
+      @include transform(translateX(0px));
+      @include transition(0.5s ease);
       opacity: 0;
     }
   }
@@ -82,10 +81,10 @@
 
 .reveal-left {
   opacity: 1 !important;
-  transform: translateX(55px) !important;
+  @include transform(translateX(55px) !important);
 }
 
 .reveal-right {
   opacity: 1 !important;
-  transform: translateX(30px) !important;
+  @include transform(translateX(30px) !important);
 }

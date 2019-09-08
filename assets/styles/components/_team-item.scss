@@ -3,15 +3,14 @@
   background-color: $color-white;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
   height: 280px;
-  border-radius: $border-radius-5;
-  // margin: 0 15px;
+  border-radius: $base-border-radius;
   cursor: $pointer;
   .team-details {
     .team-info {
       background-color: $color-royal-blue;
       height: 45px;
       padding: 20px 0px 9px;
-      transition: 0.5s ease;
+      @include transition(0.5s ease);
       border-radius: 5px 5px 0px 0px;
       h3 {
         letter-spacing: 0.69px;
@@ -30,7 +29,7 @@
           padding: 0 10px;
           a {
             color: $color-royal-blue;
-            transition: 0.5s ease;
+            @include transition(0.5s ease);
           }
         }
       }
@@ -55,7 +54,7 @@
       right: 0;
       margin: auto;
       box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-      transition: 0.3s ease;
+      @include transition(0.3s ease);
     }
   }
   &:hover {

@@ -7,7 +7,7 @@
   z-index: 1111;
   background-image: linear-gradient(135deg, #585ce9 0%, #5c83e3 100%);
   opacity: 1;
-  transition: opacity 0.3s ease;
+  @include transition(opacity 0.3s ease);
   #loader {
     left: 50%;
     top: 50%;
@@ -39,25 +39,25 @@
     border-bottom-right-radius: 3px;
   }
   25% {
-    transform: translateY(9px) rotate(45deg);
+    @include transform(translateY(9px) rotate(45deg));
   }
   50% {
-    transform: translateY(18px) rotate(45deg);
+    @include transform(translateY(18px) rotate(45deg));
     border-bottom-right-radius: 40px;
   }
   75% {
-    transform: translateY(9px) rotate(67.5deg);
+    @include transform(translateY(9px) rotate(67.5deg));
   }
   100% {
-    transform: translateY(0) rotate(90deg);
+    @include transform(translateY(0) rotate(90deg));
   }
 }
 
 @keyframes shadow {
   50% {
-    transform: scale(1.5);
+    @include transform(scale(1.5));
   }
   100% {
-    transform: scale(1);
+    @include transform(scale(1));
   }
 }

@@ -38,7 +38,7 @@
     img {
       width: 90%;
       height: 470px;
-      border-radius: $border-radius-5;
+      border-radius: $base-border-radius;
     }
   }
   &-content {
@@ -48,7 +48,7 @@
     background-color: #fff;
     box-sizing: border-box;
     padding: 20px 34px 5px;
-    border-radius: 5px;
+    border-radius: $base-border-radius;
     h2 {
       font-size: $font-size + 8;
       line-height: 38px;

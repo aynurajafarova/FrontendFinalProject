@@ -6,9 +6,8 @@
   text-align: center;
   padding-bottom: $pb-30 + 5;
   opacity: 0;
-  transform: translateY(45px);
-  transition: 0.2s ease-in;
-  // margin: 0px 15px;
+  @include transform(translateY(45px));
+  @include transition(0.2s ease-in);
   cursor: $pointer;
   .pricing {
     &-header {

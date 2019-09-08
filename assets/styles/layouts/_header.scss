@@ -1,7 +1,3 @@
-// %nav-bar-style {
-
-// }
-
 #header-area {
   position: fixed;
   left: 0px;
@@ -9,7 +5,7 @@
   z-index: 100;
   padding-top: 30px;
   padding-bottom: 20px;
-  transition: 0.5 ease;
+  @include transition(0.5 ease);
   .logo {
     width: 17%;
     float: left;
@@ -32,7 +28,7 @@
     }
     .submenu {
       position: relative;
-      transition: 0.5s ease;
+      @include transition(0.5s ease);
       a {
         i {
           display: inline-block;
@@ -46,9 +42,9 @@
         width: 200px;
         z-index: 10;
         box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
-        border-radius: 5px;
+        border-radius: $base-border-radius;
         background-color: $color-white;
-        transform: translate(0px, -20px);
+        @include transform(translate(0px, -20px));
         li {
           border-bottom: 1px solid #f5f5f5;
           padding-left: 0;
@@ -70,12 +66,12 @@
               top: 0;
               bottom: 0;
               background-color: $color-royal-blue;
-              transition: 0.5s ease;
+              @include transition(0.5s ease);
             }
             &:hover {
               background-color: $color-wild-sand;
               padding-left: $pl-20 + 5;
-              transition: 0.5s ease;
+              @include transition(0.5s ease);
             }
           }
         }
@@ -83,8 +79,8 @@
       &:hover ul {
         visibility: visible;
         z-index: 10;
-        transform: translate(0px, 0px);
-        transition: 0.5s ease;
+        @include transform(translate(0px, 0px));
+        @include transition(0.5s ease);
       }
     }
   }
@@ -92,7 +88,6 @@
     clear: both;
   }
   .menu-trigger {
-    // float: right;
     &-icon {
       cursor: pointer;
       float: right;
@@ -104,7 +99,7 @@
         width: 30px;
         height: 2px;
         background-color: black;
-        transition: 0.5s ease;
+        @include transition(0.5s ease);
         cursor: pointer;
         &::after {
           content: "";
@@ -113,7 +108,7 @@
           height: 2px;
           background-color: black;
           bottom: 10px;
-          transition: 0.5s ease;
+          @include transition(0.5s ease);
         }
         &::before {
           content: "";
@@ -122,7 +117,7 @@
           height: 2px;
           background-color: black;
           top: 10px;
-          transition: 0.5s ease;
+          @include transition(0.5s ease);
         }
       }
     }
@@ -130,8 +125,6 @@
       display: none;
       margin-top: 32px;
       background-color: white;
-      // position: fixed;
-      // width: 85%;
       li {
         padding: 15px 0;
         a {
@@ -146,10 +139,10 @@
         }
       }
       .submenu {
-        transition: 0.3s ease;
+        @include transition(0.3s ease);
 
         &-list {
-          transition: 0.3s ease;
+          @include transition(0.3s ease);
           display: none;
           margin-top: 10px;
           margin-left: 30px;
@@ -163,10 +156,10 @@
   span {
     background-color: transparent !important;
     &::after {
-      transform: rotate(-45deg) translate(-10px, 7px);
+      @include transform(rotate(-45deg) translate(-10px, 7px));
     }
     &::before {
-      transform: rotate(45deg) translate(-6px, -6px);
+      @include transform(rotate(45deg) translate(-6px, -6px));
     }
   }
 }

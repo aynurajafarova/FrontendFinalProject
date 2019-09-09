@@ -1,3 +1,5 @@
+// These properties belong to blockquote on the Single Blog page
+
 %icon-quote {
   position: absolute;
   color: $color-link-water;
@@ -23,12 +25,12 @@
     .icon-quote {
       &-left-solid {
         @extend %icon-quote;
-        left: -8px;
+        left: -15px;
       }
       &-right-solid {
         @extend %icon-quote;
-        right: -10px;
-        bottom: 15px;
+        right: -12px;
+        bottom: 40px;
       }
     }
   }

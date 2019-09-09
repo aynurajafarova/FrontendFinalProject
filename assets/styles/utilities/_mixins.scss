@@ -1,3 +1,5 @@
+// Mixins for transform and transition
+
 @mixin transform($property) {
   -webkit-transform: $property;
   -ms-transform: $property;
@@ -10,32 +12,4 @@
   -ms-transition: $args;
   -o-transition: $args;
   transition: $args;
-}
-
-// Extra small devices (portrait phones, less than 576px)
-@mixin extra-small {
-  @media screen and (max-width: 575.98px) {
-    @content;
-  }
-}
-
-// Small devices (landscape phones, 576px and up)
-@mixin small {
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    @content;
-  }
-}
-
-// Medium devices (tablets, 768px and up)
-@mixin medium {
-  @media screen and (min-width: 768px) and (max-width: 991.98px) {
-    @content;
-  }
-}
-
-// Large devices (desktops, 992px and up)
-@mixin large {
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    @content;
-  }
 }

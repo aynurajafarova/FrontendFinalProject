@@ -1,3 +1,5 @@
+// These properties belong to questions part (accordion) on the FAQ page
+
 #askedQuestions {
   .heading-content {
     h1 {
@@ -41,6 +43,8 @@
     }
   }
 }
+
+// Make the page FAQ responsive
 
 // Extra small devices (portrait phones, less than 576px)
 @include extra-small {

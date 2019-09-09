@@ -1,3 +1,5 @@
+// These properties belong to 'Get in touch' section on the Contact page
+
 .get-in-touch {
   h5 {
     @extend %comment-title;
@@ -12,6 +14,7 @@
   }
 }
 
+// and also properties of the map section
 #map {
   position: relative;
   .map-content {
@@ -52,6 +55,8 @@
     }
   }
 }
+
+// Make the page Contact responsive
 
 // Extra small devices (portrait phones, less than 576px)
 @include extra-small {

@@ -1,3 +1,5 @@
+// These properties belong to 'Industry Leading Managed Services and Staffing Solutions' section, which I called 'Welcome', on the Home page
+
 #welcome {
   background-image: url("../images/header-bg.svg");
   background-size: contain;
@@ -126,6 +128,8 @@
 #pricingPlans {
   background-color: $color-polar;
 }
+
+// Make the page Home responsive
 
 // Extra small devices (portrait phones, less than 576px)
 @include extra-small {

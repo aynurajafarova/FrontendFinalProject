@@ -1,3 +1,5 @@
+// These properties belong to small features on the Home page and About Us page
+
 .features-small-item {
   @include transform(translateY(30px));
   @include transition(0.2s ease-in);

@@ -14,6 +14,8 @@
   box-sizing: border-box;
 }
 
+//Responsive Web Design - Media Queries
+
 // Extra small devices (portrait phones, less than 576px)
 @mixin extra-small {
   @media screen and (max-width: 575.98px) {

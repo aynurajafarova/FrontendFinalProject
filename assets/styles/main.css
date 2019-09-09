@@ -1104,8 +1104,8 @@ aside .aside-contact-us {
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease; }
   #preloader #loader {
-    left: 50%;
-    top: 50%;
+    left: 47%;
+    top: 47%;
     position: absolute; }
     #preloader #loader #shadow {
       width: 50px;
@@ -1382,7 +1382,7 @@ aside .aside-contact-us {
   background-size: contain;
   background-repeat: no-repeat; }
   #welcome .welcome-content {
-    margin-top: 100px; }
+    margin-top: 150px; }
   #welcome .welcome-images-group {
     margin-top: 25px; }
     #welcome .welcome-images-group .first-img {
@@ -1427,7 +1427,7 @@ aside .aside-contact-us {
                   transform: scale(1.1); }
       #welcome .welcome-images-group .second-img i {
         position: absolute;
-        left: 90px;
+        left: 40%;
         top: 42px;
         font-size: 64px;
         color: #fff; }
@@ -3075,5 +3075,4 @@ aside .aside-contact-us {
 
   .col-lg-12 {
     width: 100%; } }
-
 /*# sourceMappingURL=main.css.map */

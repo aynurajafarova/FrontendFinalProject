@@ -4,7 +4,7 @@ $(document).ready(function () {
         setTimeout(() => { //Calling functions after 2000 milliseconds
             showSmallFeatures(); //Calling a function named showSmallFeatures
             showPricingPlans();  //Calling a function named showPricingPlans
-        }, 2000);
+        }, 1500);
     });
 
 

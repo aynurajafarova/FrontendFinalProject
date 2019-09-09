@@ -5,7 +5,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   .welcome-content {
-    margin-top: 100px;
+    margin-top: 150px;
   }
   .welcome-images-group {
     margin-top: $mt-20 + 5;
@@ -44,7 +44,7 @@
       }
       i {
         position: absolute;
-        left: 90px;
+        left: 40%;
         top: 42px;
         font-size: 64px;
         color: $color-white;

@@ -17,6 +17,8 @@
     letter-spacing: 0.88px;
     line-height: 26px;
     margin-bottom: $mb-20;
+    box-sizing: border-box;
+    padding: 0px 8px;
   }
 }
 
@@ -89,9 +91,12 @@
   }
   &-content {
     box-sizing: border-box;
-    padding: 0px 15px;
+    padding: 0px 12px;
     @extend %content;
     margin-top: $mt-20;
+    h3 {
+      font-size: 18px;
+    }
   }
   .single-blog-post {
     padding: 20px 25px 15px;
@@ -163,7 +168,6 @@
     font-size: 14px;
     color: $color-bermuda-gray;
     font-weight: 300;
-    // padding-left: 30px;
   }
   &-nav {
     float: right;

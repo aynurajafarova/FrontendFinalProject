@@ -60,16 +60,16 @@
 
 .items-list-img {
   &-right {
-    margin-top: 65px;
+    padding-top: 65px;
     img {
-      @include transform(translateX(120px));
+      @include transform(translateX(55px));
       @include transition(0.5s ease);
       opacity: 0;
       max-width: 100%;
     }
   }
   &-left {
-    margin-top: 80px;
+    padding-top: 80px;
     img {
       max-width: 100%;
       @include transform(translateX(0px));
@@ -81,7 +81,7 @@
 
 .reveal-left {
   opacity: 1 !important;
-  @include transform(translateX(55px) !important);
+  @include transform(translateX(10px) !important);
 }
 
 .reveal-right {

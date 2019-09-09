@@ -1,23 +1,8 @@
-@media screen and (min-width: 1200px) {
+@mixin col($infix) {
   $columns: 12;
-
   @for $i from 1 through $columns {
-    .col-xl-#{$i} {
+    .col-#{$infix}-#{$i} {
       width: percentage($i/$columns);
-    }
-  }
-
-  .section {
-    display: block;
-    box-sizing: border-box;
-    padding: 70px 0;
-  }
-  #header-area {
-    .menu-trigger {
-      display: none;
-      &-icon{
-        display: none;
-      }
     }
   }
 }

@@ -1,22 +1,17 @@
+//Keep the navigation bar at the top of the page while scrolling
+
 $(document).ready(function () {
 
-    $(window).scroll(function () {
+    $(window).scroll(function () {  //Adding scroll event to the document
         const $header = $('#header-area');
-        const headerHeight = $header.innerHeight();
-        const scrollTop = $(this).scrollTop();
+        const headerHeight = $header.innerHeight();  //Taking the header's height
+        const scrollTop = $(this).scrollTop(); //Getting  the vertical scrollbar position
 
-        if (scrollTop >= headerHeight) {
-            $header.addClass('scrolled');
+        if (scrollTop >= headerHeight) { //Comparing scrollTop with the headerHeight,if scrollTop is bigger than headerHeight
+            $header.addClass('scrolled'); //Add class
         } else {
-            $header.removeClass('scrolled');
+            $header.removeClass('scrolled'); //Otherwise,remove class
         }
-
-        // if(scrollTop){
-        //     $header.addClass('scrolled');
-        // }else{
-        //     $header.removeClass('scrolled');
-        // }
-
     });
 
 });

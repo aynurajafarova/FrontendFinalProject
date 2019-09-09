@@ -2,6 +2,9 @@
   background-image: url("../images/header-bg.svg");
   background-size: contain;
   background-repeat: no-repeat;
+  .welcome-content {
+    margin-top: 100px;
+  }
   .welcome-images-group {
     margin-top: $mt-20 + 5;
     .first-img {
@@ -155,6 +158,7 @@
   #welcome {
     padding-top: 90px;
     .welcome-content {
+      margin-top: 0px;
       .heading-content {
         text-align: center;
       }
@@ -189,6 +193,7 @@
 
   #features {
     .features-small-item {
+      margin-top: 20px;
       .small-item-desc {
         padding: 20px 0px;
       }
@@ -198,8 +203,14 @@
   #services {
     .items-list-img-right {
       img {
-        margin-left: -70px;
+        transform: translateX(32px);
       }
+    }
+  }
+
+  #designDevelopment {
+    .items-list-img-left {
+      transform: translateX(-10px);
     }
   }
 
@@ -264,6 +275,7 @@
   #welcome {
     padding-top: 90px;
     .welcome-content {
+      margin-top: 0px;
       text-align: center;
     }
   }
@@ -330,6 +342,7 @@
     padding-top: 90px;
     .welcome-content {
       text-align: center;
+      margin-top: 0px;
     }
   }
 
@@ -441,6 +454,38 @@
   #contactUsParallax {
     .contact-us-info {
       top: 70px;
+    }
+  }
+
+  #blogPosts {
+    .blog-post {
+      &-content {
+        h3 {
+          a {
+            letter-spacing: 0.65px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  @include col(xl);
+
+  .section {
+    display: block;
+    box-sizing: border-box;
+    padding: 70px 0;
+  }
+
+  #header-area {
+    .menu-trigger {
+      display: none;
+      &-icon {
+        display: none !important;
+      }
     }
   }
 }

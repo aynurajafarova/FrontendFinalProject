@@ -28,6 +28,7 @@
         line-height: 46px;
         letter-spacing: 1.4px;
         padding-bottom: 5px;
+        text-align: center;
         &::after {
           content: "";
           position: absolute;
@@ -75,8 +76,6 @@
 
 .parallax-mirror {
   background-size: cover;
-  // background-attachment: fixed;
-  // background-repeat: no-repeat;
   background-position: center;
   position: absolute;
   width: 100%;
